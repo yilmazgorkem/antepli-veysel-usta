@@ -31,17 +31,23 @@ const server = http.createServer((req, res) => {
   let parsedUrl = new URL(req.url, `http://${req.headers.host || 'localhost'}`);
   let pathname = decodeURIComponent(parsedUrl.pathname);
 
-  // Friendly Route Aliases
-  if (pathname === '/' || pathname === '') {
-    pathname = '/index.html';
-  } else if (
+  // Sadece yapım aşamasındaki açılış sayfası (index.html) sunulur, ana sayfa ve diğer HTML sayfaları tamamen engellenir
+  if (
     pathname === '/ana-sayfa' ||
+    pathname === '/ana-sayfa.html' ||
     pathname === '/anasayfa' ||
     pathname === '/full' ||
     pathname === '/onizleme' ||
-    pathname === '/preview'
+    pathname === '/preview' ||
+    (pathname.endsWith('.html') && pathname !== '/index.html')
   ) {
-    pathname = '/ana-sayfa.html';
+    res.writeHead(302, { Location: '/' });
+    res.end();
+    return;
+  }
+
+  if (pathname === '/' || pathname === '') {
+    pathname = '/index.html';
   }
 
   const filePath = path.join(__dirname, pathname);
