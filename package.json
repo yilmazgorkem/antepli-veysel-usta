@@ -1,0 +1,21 @@
+{
+  "name": "antepli-veysel-usta",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Antepli Veysel Usta Kuru Bakliyat ve Kuruyemiş Web Sitesi",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "keywords": [
+    "antepli-veysel-usta",
+    "kuruyemis",
+    "kuru-bakliyat",
+    "ankara",
+    "cankaya"
+  ],
+  "author": "Antepli Veysel Usta"
+}
