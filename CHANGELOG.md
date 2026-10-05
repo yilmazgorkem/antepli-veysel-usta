@@ -39,7 +39,9 @@ Format, [Keep a Changelog](https://keepachangelog.com/tr/1.0.0/) standardına da
 - Ürün gramaj ve çeşitlilik bilgilerini içeren genişletilmiş liste.
 
 ### Değiştirilenler
-- **Hero Başlık Tipografisi ve Satır Yüksekliği (`index.html`, `css/style.css`):**
+- **Minimalist "Sitemiz Yapım Aşamasındadır" Görünümü (`index.html`):**
+  - Kullanıcı talebi doğrultusunda açılış sayfası yalnızca dikey ve yatay olarak ortalanmış "Sitemiz Yapım Aşamasındadır" metnini içerecek şekilde sadeleştirildi. Tüm ekstra bileşenler kaldırıldı; marka kimliğine özgü Cormorant Garamond tipografisi ve sıcak kâğıt arka plan tonu korundu.
+- **Hero Başlık Tipografisi ve Satır Yüksekliği (`ana-sayfa.html`, `css/style.css`):**
   - Ana vitrin başlığı marka kimliğine uygun olarak "Antepli" ve "Veysel Usta" (`Antepli<br />Veysel Usta`) şeklinde iki satıra ayrıldı.
   - Serif yazı tipindeki (Cormorant Garamond) "p" harfinin kuyruğu (descender) ile "l" harfinin üst uzantısının (ascender) birbirine temas etmesini önlemek amacıyla `h1` için `line-height: 1.16` tanımlanarak harfler arası nefes alanı açıldı.
 
