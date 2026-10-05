@@ -6,9 +6,24 @@ Format, [Keep a Changelog](https://keepachangelog.com/tr/1.0.0/) standardına da
 
 ---
 
-## [Yayınlanmamış] - [Unreleased]
+## [0.2.0] - 2026-10-05
 
 ### Eklenenler
+- **"Site Yapım Aşamasındadır" (Under Construction) Yayını (`index.html`, `css/style.css`):**
+  - Alan adına gelen ziyaretçileri karşılayan, marka kimliğine tam uyumlu "Sitemiz Yapım Aşamasındadır" vitrini hazırlandı.
+  - Canlı pulsing rozet ile Çankaya'daki fiziki dükkânın açık ve hizmette olduğu vurgulandı.
+  - Açık adres, Google Maps yol tarifi, tek tıkla adres kopyalama ve anlık toast bildirimi eklendi.
+  - WhatsApp hızlı sipariş ve iletişim bağlantısı entegre edildi.
+  - Kuru bakliyat, taze kuruyemiş ve esnaf ahlakını tanıtan 3 önizleme vitrin kartı yerleştirildi.
+  - Dükkân sahibinin ve geliştiricinin hazırlanan ana sayfayı tek tıkla görebilmesi için önizleme bağlantısı (`ana-sayfa.html`) sağlandı.
+- **Ana Sayfa Koruması (`ana-sayfa.html`):**
+  - Daha önce hazırlanan eksiksiz web sitesi (`index.html`) hiçbir kayıp olmadan `ana-sayfa.html` olarak arşivlendi ve erişilebilir tutuldu.
+- **Railway ve Üretim Sunucusu Yapılandırması (`server.js`, `package.json`, `Procfile`):**
+  - Harici paket bağımlılığı gerektirmeyen (zero-dependency) saf Node.js HTTP statik dosya sunucusu kodlandı.
+  - Railway `$PORT` ortam değişkeni, health check (`/health`), MIME tipleri ve statik dosya önbellekleme (Cache-Control) destekleri eklendi.
+  - `/ana-sayfa`, `/anasayfa` ve `/preview` URL yönlendirmeleri tanımlandı.
+- **GitHub Versiyon Kontrolü:**
+  - Proje Git versiyon kontrolüne alındı ve `https://github.com/yilmazgorkem/antepli-veysel-usta` reposuna aktarıldı.
 - **Fiziksel Konum, İnteraktif Harita ve Adres Aksiyonları (`index.html`, `css/style.css`, `js/site.js`):**
   - Dükkânın fiziksel açık adresi sisteme entegre edildi: `Büyükesat Mahallesi, Mahatma Gandhi Caddesi, No: 68/8, 06680 Çankaya / Ankara`.
   - Editoryal tasarıma uygun, altın dokulu kenarlıklara sahip iki sütunlu "Konum & Ulaşım" vitrini kurgulandı.
