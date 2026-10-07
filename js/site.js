@@ -13,6 +13,13 @@ if (toggle && nav) {
       toggle.setAttribute("aria-expanded", "false");
     });
   });
+
+  document.addEventListener("click", (e) => {
+    if (!nav.contains(e.target) && !toggle.contains(e.target)) {
+      nav.classList.remove("is-open");
+      toggle.setAttribute("aria-expanded", "false");
+    }
+  });
 }
 
 const extensions = ["jpg", "jpeg", "png", "webp"];

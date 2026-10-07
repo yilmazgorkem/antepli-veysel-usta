@@ -31,23 +31,20 @@ const server = http.createServer((req, res) => {
   let parsedUrl = new URL(req.url, `http://${req.headers.host || 'localhost'}`);
   let pathname = decodeURIComponent(parsedUrl.pathname);
 
-  // Sadece yapım aşamasındaki açılış sayfası (index.html) sunulur, ana sayfa ve diğer HTML sayfaları tamamen engellenir
+  // Ana sayfa ve rotalar
   if (
+    pathname === '/' ||
+    pathname === '' ||
     pathname === '/ana-sayfa' ||
     pathname === '/ana-sayfa.html' ||
     pathname === '/anasayfa' ||
     pathname === '/full' ||
     pathname === '/onizleme' ||
-    pathname === '/preview' ||
-    (pathname.endsWith('.html') && pathname !== '/index.html')
+    pathname === '/preview'
   ) {
-    res.writeHead(302, { Location: '/' });
-    res.end();
-    return;
-  }
-
-  if (pathname === '/' || pathname === '') {
     pathname = '/index.html';
+  } else if (pathname === '/yapim-asamasinda' || pathname === '/maintenance') {
+    pathname = '/yapim-asamasinda.html';
   }
 
   const filePath = path.join(__dirname, pathname);
@@ -86,8 +83,9 @@ const server = http.createServer((req, res) => {
     const ext = path.extname(filePath).toLowerCase();
     const contentType = MIME_TYPES[ext] || 'application/octet-stream';
 
-    // Caching: HTML is fresh, static assets cached 1 day
-    const cacheControl = ext === '.html' ? 'no-cache' : 'public, max-age=86400';
+    // Caching: HTML, CSS ve JS anlık yenilenir, görseller 1 gün önbelleklenir
+    const isCode = ext === '.html' || ext === '.css' || ext === '.js';
+    const cacheControl = isCode ? 'no-cache, must-revalidate' : 'public, max-age=86400';
 
     res.writeHead(200, {
       'Content-Type': contentType,

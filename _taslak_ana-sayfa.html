@@ -16,7 +16,7 @@
       href="https://fonts.googleapis.com/css2?family=Caveat:wght@500;600&family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500;1,600&family=Outfit:wght@400;500;600&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="css/style.css?v=1.1" />
+    <link rel="stylesheet" href="css/style.css?v=1.6" />
     <script type="application/ld+json">
       {
         "@context": "https://schema.org",
@@ -24,6 +24,7 @@
         "name": "Antepli Veysel Usta",
         "url": "https://antepliveyselusta.com",
         "description": "Kuru bakliyat ve kuruyemiş dükkânı.",
+        "email": "info@antepliveyselusta.com",
         "address": {
           "@type": "PostalAddress",
           "streetAddress": "Mahatma Gandhi Caddesi No:68/8",
@@ -45,9 +46,14 @@
 
     <header class="site-header">
       <div class="header-inner">
-        <a class="brand" href="#ust">
-          <span class="brand-mark" aria-hidden="true"></span>
-          <span class="brand-name">Antepli Veysel Usta</span>
+        <a class="brand" href="#ust" aria-label="Antepli Veysel Usta — Ana Sayfa">
+          <div class="brand-emblem-wrap" aria-hidden="true">
+            <img class="brand-emblem" src="images/logo-emblem.svg" alt="" width="44" height="44" />
+          </div>
+          <div class="brand-text">
+            <span class="brand-name">Antepli Veysel Usta</span>
+            <span class="brand-subtitle">Kuru Bakliyat &amp; Kuruyemiş</span>
+          </div>
         </a>
         <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="menu">
           <span class="nav-toggle-lines" aria-hidden="true"></span>
@@ -182,19 +188,6 @@
               Eve götürdüğünüzde içinizin rahat ettiği bir paket istiyoruz.
             </p>
           </div>
-          <div class="mat mat-about">
-            <div
-              class="shot shot-portrait"
-              data-photo="images/dukkan"
-              data-alt="Antepli Veysel Usta dükkânı"
-            >
-              <div class="shot-empty">
-                <span class="monogram" aria-hidden="true">AV</span>
-                <p>Görsel eklenecek</p>
-                <code>images/dukkan.jpg</code>
-              </div>
-            </div>
-          </div>
         </div>
       </section>
 
@@ -298,12 +291,16 @@
     </main>
 
     <footer class="site-footer">
-      <p>Antepli Veysel Usta</p>
-      <p>Kuru bakliyat ve kuruyemiş</p>
+      <div class="footer-emblem-wrap" aria-hidden="true">
+        <img class="footer-emblem" src="images/logo-emblem.svg" alt="" width="52" height="52" />
+      </div>
+      <p class="footer-brand">Antepli Veysel Usta</p>
+      <p class="footer-tagline">Kuru Bakliyat ve Kuruyemiş</p>
       <p class="footer-address">Büyükesat Mah. Mahatma Gandhi Cad. No:68/8 Çankaya / Ankara</p>
-      <p><a href="https://antepliveyselusta.com">antepliveyselusta.com</a></p>
+      <p class="footer-email"><a href="mailto:info@antepliveyselusta.com">info@antepliveyselusta.com</a></p>
+      <p class="footer-link"><a href="https://antepliveyselusta.com">antepliveyselusta.com</a></p>
     </footer>
 
-    <script src="js/site.js?v=1.1"></script>
+    <script src="js/site.js?v=1.2"></script>
   </body>
 </html>

@@ -3,66 +3,304 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Sitemiz Yapım Aşamasındadır — Antepli Veysel Usta</title>
+    <title>Antepli Veysel Usta — Kuru Bakliyat ve Kuruyemiş</title>
     <meta
       name="description"
-      content="Antepli Veysel Usta — Sitemiz Yapım Aşamasındadır"
+      content="Antepli Veysel Usta, kuru bakliyat ve kuruyemiş dükkânı. Yemeklik bakliyat ile çiğ ve kavrulmuş kuruyemiş, tezgâhın başından."
     />
-    <meta name="theme-color" content="#f6f0e6" />
+    <meta name="theme-color" content="#3D2914" />
     <link rel="icon" href="favicon.svg" type="image/svg+xml" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Caveat:wght@500;600&family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500;1,600&family=Outfit:wght@400;500;600&display=swap"
       rel="stylesheet"
     />
-    <style>
-      *,
-      *::before,
-      *::after {
-        box-sizing: border-box;
-        margin: 0;
-        padding: 0;
+    <link rel="stylesheet" href="css/style.css?v=1.6" />
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Store",
+        "name": "Antepli Veysel Usta",
+        "url": "https://antepliveyselusta.com",
+        "description": "Kuru bakliyat ve kuruyemiş dükkânı.",
+        "email": "info@antepliveyselusta.com",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "Mahatma Gandhi Caddesi No:68/8",
+          "addressLocality": "Çankaya",
+          "addressRegion": "Ankara",
+          "postalCode": "06680",
+          "addressCountry": "TR"
+        },
+        "geo": {
+          "@type": "GeoCoordinates",
+          "latitude": 39.89155,
+          "longitude": 32.87547
+        }
       }
-
-      html,
-      body {
-        width: 100%;
-        height: 100%;
-        margin: 0;
-        padding: 0;
-      }
-
-      body {
-        min-height: 100vh;
-        min-height: 100dvh;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        background-color: #f6f0e6;
-        background-image:
-          radial-gradient(ellipse at 50% 40%, rgba(215, 196, 160, 0.28) 0%, rgba(246, 240, 230, 0) 70%),
-          radial-gradient(circle at 10% 90%, rgba(154, 63, 40, 0.04) 0%, transparent 50%),
-          #f6f0e6;
-        color: #2c1c12;
-        font-family: "Cormorant Garamond", Palatino, "Palatino Linotype", Georgia, serif;
-        text-align: center;
-        padding: 2rem 1.5rem;
-        -webkit-font-smoothing: antialiased;
-        -moz-osx-font-smoothing: grayscale;
-        overflow: hidden;
-      }
-
-      h1 {
-        font-size: clamp(2.4rem, 6vw, 4.2rem);
-        font-weight: 600;
-        line-height: 1.15;
-        letter-spacing: -0.02em;
-        color: #2c1c12;
-      }
-    </style>
+    </script>
   </head>
   <body>
-    <h1>Sitemiz Yapım Aşamasındadır</h1>
+    <a class="skip" href="#icerik">İçeriğe geç</a>
+
+    <header class="site-header">
+      <div class="header-inner">
+        <a class="brand" href="#ust" aria-label="Antepli Veysel Usta — Ana Sayfa">
+          <div class="brand-emblem-wrap" aria-hidden="true">
+            <img class="brand-emblem" src="images/logo-emblem.svg" alt="" width="44" height="44" />
+          </div>
+          <div class="brand-text">
+            <span class="brand-name">Antepli Veysel Usta</span>
+            <span class="brand-subtitle">Kuru Bakliyat &amp; Kuruyemiş</span>
+          </div>
+        </a>
+        <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="menu">
+          <span class="nav-toggle-lines" aria-hidden="true"></span>
+          <span class="visually-hidden">Menü</span>
+        </button>
+        <nav class="nav" id="menu" aria-label="Sayfa">
+          <a href="#tezgah">Tezgâh</a>
+          <a href="#hakkimizda">Hakkımızda</a>
+          <a href="#konum">Konum</a>
+        </nav>
+      </div>
+    </header>
+
+    <main id="icerik">
+      <section class="hero" id="ust">
+        <div class="hero-copy">
+          <p class="script">Hoş geldiniz</p>
+          <h1>Antepli<br />Veysel Usta</h1>
+          <p class="eyebrow">Kuru bakliyat ve kuruyemiş</p>
+          <p class="lede">
+            Yemeklik bakliyat ile çiğ ve kavrulmuş kuruyemiş. Günlük mutfak ve
+            ikram sofrası için, tezgâhın başından.
+          </p>
+          <a class="button" href="#tezgah">Tezgâha bak</a>
+        </div>
+        <div class="hero-visual">
+          <div class="mat">
+            <div
+              class="shot shot-portrait"
+              data-photo="images/vitrin"
+              data-alt="Antepli Veysel Usta tezgâhından bir görünüm"
+            >
+              <div class="shot-empty">
+                <span class="monogram" aria-hidden="true">VU</span>
+                <p>Görsel eklenecek</p>
+                <code>images/vitrin.jpg</code>
+              </div>
+            </div>
+          </div>
+          <div class="seal" aria-hidden="true">
+            <span>Antepli</span>
+            <strong>V.U.</strong>
+            <span>Tezgâh</span>
+          </div>
+        </div>
+      </section>
+
+      <section class="band" aria-label="Dükkânın üç hali">
+        <ul>
+          <li>
+            <strong>Kuru bakliyat</strong>
+            <span>Yemeklik ve kışlık</span>
+          </li>
+          <li>
+            <strong>Kuruyemiş</strong>
+            <span>Çiğ ve kavrulmuş</span>
+          </li>
+          <li>
+            <strong>Tezgâh başı</strong>
+            <span>Tartarak, anlatarak</span>
+          </li>
+        </ul>
+      </section>
+
+      <section class="section" id="tezgah">
+        <div class="section-head">
+          <p class="script">Ne satıyoruz</p>
+          <h2>Tezgâhta</h2>
+          <p class="section-lead">
+            Dükkânın işi iki grupta toplanır: kuru bakliyat ve kuruyemiş.
+          </p>
+        </div>
+        <div class="cards">
+          <article class="card">
+            <div
+              class="shot shot-wide"
+              data-photo="images/bakliyat"
+              data-alt="Kuru bakliyat"
+            >
+              <div class="shot-empty">
+                <span class="monogram" aria-hidden="true">B</span>
+                <p>Görsel eklenecek</p>
+                <code>images/bakliyat.jpg</code>
+              </div>
+            </div>
+            <div class="card-body">
+              <h3>Kuru bakliyat</h3>
+              <p>
+                Yemeklik ve kışlık kuru bakliyat. Çorbanın, tencerenin ve ev
+                erzağının temel taneleri bu tezgahta tartılır.
+              </p>
+            </div>
+          </article>
+          <article class="card">
+            <div
+              class="shot shot-wide"
+              data-photo="images/kuruyemis"
+              data-alt="Kuruyemiş"
+            >
+              <div class="shot-empty">
+                <span class="monogram" aria-hidden="true">K</span>
+                <p>Görsel eklenecek</p>
+                <code>images/kuruyemis.jpg</code>
+              </div>
+            </div>
+            <div class="card-body">
+              <h3>Kuruyemiş</h3>
+              <p>
+                Çiğ ve kavrulmuş kuruyemiş. Misafir sofrası, kahve yanı ve gün
+                içi atıştırmalık için.
+              </p>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="about" id="hakkimizda">
+        <div class="about-inner">
+          <div class="about-copy">
+            <p class="script">Dükkân</p>
+            <h2>Hakkımızda</h2>
+            <p>
+              Antepli Veysel Usta, kuru bakliyat ve kuruyemiş dükkânıdır.
+              Tezgâhta yemeklik bakliyat ile çiğ ve kavrulmuş kuruyemiş bir
+              arada durur.
+            </p>
+            <p>
+              Her paketin başında dururuz. Ölçü tartıyla belli olur, seçim
+              gözle yapılır. Ne aldığınızı açıkça konuşuruz.
+            </p>
+            <p>
+              Eve götürdüğünüzde içinizin rahat ettiği bir paket istiyoruz.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="section konum" id="konum">
+        <div class="section-head">
+          <p class="script">Ziyaret Edin</p>
+          <h2>Konum &amp; Ulaşım</h2>
+          <p class="section-lead">
+            Yöresinden gelen taze bakliyat ve kavrulmuş kuruyemişler için Çankaya'daki tezgâhımıza bekleriz.
+          </p>
+        </div>
+
+        <div class="konum-wrapper">
+          <div class="address-card">
+            <div class="address-header">
+              <span class="pin" aria-hidden="true"></span>
+              <p class="script address-badge">Çankaya / Ankara</p>
+              <h3 class="address-title">Antepli Veysel Usta</h3>
+            </div>
+
+            <div class="address-content">
+              <p class="address-street">
+                Büyükesat Mahallesi<br />
+                Mahatma Gandhi Caddesi, No: 68/8<br />
+                <strong>06680 Çankaya / Ankara</strong>
+              </p>
+
+              <div class="address-meta">
+                <div class="address-meta-row">
+                  <span class="address-meta-label">Mahalle:</span>
+                  <span class="address-meta-val">Büyükesat</span>
+                </div>
+                <div class="address-meta-row">
+                  <span class="address-meta-label">Cadde:</span>
+                  <span class="address-meta-val">Mahatma Gandhi Cd. No:68/8</span>
+                </div>
+                <div class="address-meta-row">
+                  <span class="address-meta-label">Bölge:</span>
+                  <span class="address-meta-val">Gaziosmanpaşa — Kuleli Civarı</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="address-actions">
+              <a
+                class="button button-primary"
+                href="https://www.google.com/maps/dir/?api=1&destination=Mahatma+Gandhi+Caddesi+No:68/8+B%C3%BCy%C3%BCkesat+%C3%87ankaya+Ankara"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <svg class="btn-icon" viewBox="0 0 24 24" width="16" height="16" fill="currentColor" aria-hidden="true">
+                  <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/>
+                </svg>
+                <span>Yol Tarifi Al</span>
+              </a>
+              <a
+                class="button button-outline"
+                href="https://maps.google.com/?q=Mahatma+Gandhi+Caddesi+No:68/8+B%C3%BCy%C3%BCkesat+%C3%87ankaya+Ankara"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <span>Google Haritalar ↗</span>
+              </a>
+              <button
+                type="button"
+                class="button button-ghost"
+                id="copy-address-btn"
+                aria-label="Adresi panoya kopyala"
+              >
+                <svg class="btn-icon" viewBox="0 0 24 24" width="16" height="16" fill="currentColor" aria-hidden="true">
+                  <path d="M16 1H4c-1.1 0-2 .9-2 2v14h2V3h12V1zm3 4H8c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h11c1.1 0 2-.9 2-2V7c0-1.1-.9-2-2-2zm0 16H8V7h11v14z"/>
+                </svg>
+                <span>Adresi Kopyala</span>
+              </button>
+            </div>
+          </div>
+
+          <div class="map-card">
+            <div class="map-frame">
+              <iframe
+                title="Antepli Veysel Usta Konum Haritası"
+                src="https://www.openstreetmap.org/export/embed.html?bbox=32.8680%2C39.8875%2C32.8830%2C39.8955&amp;layer=mapnik&amp;marker=39.89155%2C32.87547"
+                loading="lazy"
+                referrerpolicy="no-referrer"
+                allowfullscreen
+              ></iframe>
+            </div>
+            <div class="map-footer">
+              <span class="map-footer-label">Büyükesat Mah. Mahatma Gandhi Cad. No:68/8 Çankaya / Ankara</span>
+              <a
+                href="https://maps.google.com/?q=Mahatma+Gandhi+Caddesi+No:68/8+B%C3%BCy%C3%BCkesat+%C3%87ankaya+Ankara"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Haritada Aç ↗
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="footer-emblem-wrap" aria-hidden="true">
+        <img class="footer-emblem" src="images/logo-emblem.svg" alt="" width="52" height="52" />
+      </div>
+      <p class="footer-brand">Antepli Veysel Usta</p>
+      <p class="footer-tagline">Kuru Bakliyat ve Kuruyemiş</p>
+      <p class="footer-address">Büyükesat Mah. Mahatma Gandhi Cad. No:68/8 Çankaya / Ankara</p>
+      <p class="footer-email"><a href="mailto:info@antepliveyselusta.com">info@antepliveyselusta.com</a></p>
+      <p class="footer-link"><a href="https://antepliveyselusta.com">antepliveyselusta.com</a></p>
+    </footer>
+
+    <script src="js/site.js?v=1.2"></script>
   </body>
 </html>

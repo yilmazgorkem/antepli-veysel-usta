@@ -6,6 +6,24 @@ Format, [Keep a Changelog](https://keepachangelog.com/tr/1.0.0/) standardına da
 
 ---
 
+## [0.3.0] - 2026-10-07
+
+### Eklenenler
+- **Ana Sayfa Canlı Yayına Alındı (`index.html`):**
+  - Taslak aşamasındaki kurumsal web sitesi `index.html` olarak ana sayfada yayına alındı.
+  - Önceki yapım aşaması sayfası `yapim-asamasinda.html` olarak arşivlendi ve `/yapim-asamasinda` rotasına bağlandı.
+- **Kurumsal İletişim E-postası:**
+  - Sayfa altbilgisine (Footer) ve Schema.org yapısal verisine `info@antepliveyselusta.com` e-posta adresi entegre edildi.
+- **Vektörel Marka Logosu (`images/logo-emblem.svg`):**
+  - Başlıkta (Header) ve altbilgide (Footer) kullanılmak üzere dairesel altın mühür dokulu VU logo amblemi eklendi.
+
+### Geliştirilenler
+- **Mobil Deneyim ve Ergonomi (Responsive UX):**
+  - Mobil menü (Hamburger) ekran genişliğine yayılan akıcı bir açılır panele dönüştürüldü, dokunma alanları büyütüldü ve dışarı tıklamayla kapanma özelliği eklendi.
+  - "Konum & Ulaşım" aksiyon butonları (Yol Tarifi Al, Google Haritalar, Adresi Kopyala) mobilde tek sütun tam genişlik olarak düzenlenerek kullanım kolaylaştırıldı.
+
+---
+
 ## [0.2.0] - 2026-10-05
 
 ### Eklenenler
