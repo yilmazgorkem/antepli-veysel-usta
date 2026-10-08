@@ -4,6 +4,33 @@ Bu projedeki tüm önemli değişiklikler bu dosyada belgelenmektedir.
 
 Format, [Keep a Changelog](https://keepachangelog.com/tr/1.0.0/) standardına dayanmakta olup, [SemVer](https://semver.org/lang/tr/) (Anlamsal Sürümleme) kurallarını takip eder.
 
+## [0.4.4] - 2026-10-08
+
+### Eklendi & Tasarım Güncellemeleri
+- **Toptan Bakliyat & Kuruyemiş Kartlarına Ürün Görselleri Eklendi (`index.html`, `_taslak_ana-sayfa.html`, `css/style.css`):**
+  - "Toptan Kuru Bakliyat Çeşitlerimiz" bölümündeki 7 karta yüksek çözünürlüklü, stüdyo kalitesinde gerçekçi ürün görselleri entegre edildi:
+    - *Kırmızı Mercimek*, *Yeşil & Sarı Mercimek*, *Koçbaşı Toptan Nohut*, *Kuru Fasulye Çeşitleri*, *Baldo & Osmancık Pirinç*, *Gaziantep Bulgur Çeşitleri*, *Barbunya, Mısır & Buğday*.
+  - "Toptan Kuruyemiş & Endüstriyel Çeşitlerimiz" bölümündeki 7 karta aynı estetik ve yüksek çözünürlük standartlarında ürün fotoğrafları eklendi:
+    - *Kavrulmuş Antep Fıstığı*, *Baklavalık Boz İç Fıstık*, *Çiğ & Kıyılmış Antep Fıstığı*, *İç Fındık Çeşitleri*, *Ceviz & Badem İçi*, *Kayısı & Kuru İncir*, *Kuru Üzüm, Çekirdek & Diğer*.
+  - Kart yapısı `.prod-media` görsel alanı ve `.prod-card-body` bilgi alanı olarak modernize edildi; hafif hover zoom (mikro etkileşim), yumuşatılmış köşe radyusu ve gölge derinliğiyle premium vitrin görünümü sağlandı.
+
+---
+
+## [0.4.3] - 2026-10-08
+
+### Kaldırılanlar & Güncellemeler
+- **Toptan Satış Uyarı Kutusu Kaldırıldı (`index.html`, `_taslak_ana-sayfa.html`):**
+  - "Biz Toptancıyız — Perakende Satışımız Bulunmamaktadır!" başlıklı büyük uyarı alanı kaldırıldı; kurumsal bölüm doğrudan "Hizmet Verdiğimiz Kurumsal Alanlar" vitriniyle sade ve şık bir akışa kavuşturuldu.
+- **İnşaat Projeleri Lokasyonları Ulusal Ölçeğe Taşındı (`index.html`, `_taslak_ana-sayfa.html`):**
+  - Projelerin tümünde yer alan tek tip Gaziantep odaklı yerel konumlandırma (Şehitkamil, Emek, Kızılhisar) kaldırıldı.
+  - Firma genel merkezine ve Türkiye geneli mühendislik vizyonuna uygun olarak projeler metropol ve stratejik lokasyonlara dağıtıldı:
+    - **1. Proje:** Çankaya Prestij Konutları & Kuleleri (`Çankaya / Ankara`)
+    - **2. Proje:** Ataşehir Finans Ticaret Merkezi & Plaza (`Ataşehir / İstanbul`)
+    - **3. Proje:** Nilüfer Vadi Konakları & Kuleleri (`Nilüfer / Bursa`)
+    - **4. Proje:** Marmara Lojistik & Depo Kompleksi (`Gebze / Kocaeli`)
+
+---
+
 ## [0.4.2] - 2026-10-08
 
 ### Düzeltmeler & Sadeleştirme
