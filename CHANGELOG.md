@@ -9,7 +9,9 @@ Format, [Keep a Changelog](https://keepachangelog.com/tr/1.0.0/) standardına da
 ### Mobil Görünüm Optimizasyonu & Üst Bildirim Şeridi Sadeleştirmesi
 - **Üst Bildirim Şeridindeki Buton Kaldırıldı (`index.html`, `_taslak_ana-sayfa.html`, `css/style.css`):**
   - "Önemli Bilgilendirme" üst şeridindeki *"Kurumsal İletişim & Bilgi Alın →"* butonu kaldırıldı.
-  - Bildirim şeridi masaüstünde ve mobilde ortalanarak sade, kurumsal ve ferah bir bilgilendirme formatına kavuşturuldu.
+- **Kahraman Bölümü Üst Başlığı (Tagline) Mimari Çizgi Formatına Geçirildi (`css/style.css`):**
+  - *"Girdiğimiz Her Sektörde İz Bırakıyoruz"* sloganındaki kutu / çerçeve arka planı kaldırıldı.
+  - Soluna zarif bir altın mimari degrade çizgi (`──`) eklenerek editoryal ve prestijli bir tipografik üst başlığa dönüştürüldü.
 - **Mobil Cihaz Uyumluluğu İyileştirildi (`css/style.css`):**
   - Mobilde dikeyde fazla yer kaplayan, dağınık satır kırılmalarına yol açan yapı düzenlendi.
   - Bildirim rozeti ve metin boyutları, satır yükseklikleri mobil ekranlara göre dengelendi; dikey alan tüketimi minimize edildi.
