@@ -4,6 +4,18 @@ Bu projedeki tüm önemli değişiklikler bu dosyada belgelenmektedir.
 
 Format, [Keep a Changelog](https://keepachangelog.com/tr/1.0.0/) standardına dayanmakta olup, [SemVer](https://semver.org/lang/tr/) (Anlamsal Sürümleme) kurallarını takip eder.
 
+## [0.4.2] - 2026-10-08
+
+### Düzeltmeler & Sadeleştirme
+- **Yatay Taşma ve Sağa Kayma Sorunu Giderildi (`index.html`, `_taslak_ana-sayfa.html`, `css/style.css`):**
+  - Sektörler, inşaat projeleri, kurumsal alanlar ve ürün kataloglarındaki kapsayıcılarda sehven kullanılan `header-inner` flex sınıfları standart blok container olan `site-container` ile değiştirildi. İçeriklerin yan yana taşması engellendi.
+  - `html` ve `body` öğelerine `overflow-x: hidden` ve `max-width: 100%` uygulanarak sayfanın sağa doğru kayması tamamen çözüldü.
+- **Kart Detayları ve İkonlar Temizlendi (`index.html`, `_taslak_ana-sayfa.html`, `css/style.css`):**
+  - Faaliyet alanları sektör kartlarındaki ikon kutucukları ve "Projeleri İncele →" vb. yönlendirme linkleri kaldırıldı; kartlar sade, kurumsal ve şık bir tipografik yapıya kavuşturuldu.
+  - "Hizmet Verdiğimiz Kurumsal Alanlar" kartlarındaki ikonlar ve toptan uyarı kutusundaki bina ikonu temizlendi.
+
+---
+
 ## [0.4.1] - 2026-10-08
 
 ### Kaldırılanlar & Sadeleştirme
