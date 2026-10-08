@@ -3,27 +3,27 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Antepli Veysel Usta — Kuru Bakliyat ve Kuruyemiş</title>
+    <title>Antepli Veysel Usta — İnşaat &amp; Taahhüt | Toptan Bakliyat ve Kuruyemiş</title>
     <meta
       name="description"
-      content="Antepli Veysel Usta, kuru bakliyat ve kuruyemiş dükkânı. Yemeklik bakliyat ile çiğ ve kavrulmuş kuruyemiş, tezgâhın başından."
+      content="Antepli Veysel Usta — Büyük ölçekli inşaat ve taahhüt projeleri; kamu kurumları, yemekhaneler ve fabrikalar için toptan kuru bakliyat ve kuruyemiş tedariği. Perakende satışımız yoktur, sadece kurumsal ve toptandır."
     />
-    <meta name="theme-color" content="#3D2914" />
+    <meta name="theme-color" content="#24160E" />
     <link rel="icon" href="favicon.svg" type="image/svg+xml" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Caveat:wght@500;600&family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500;1,600&family=Outfit:wght@400;500;600&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Caveat:wght@500;600&family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500;1,600&family=Outfit:wght@400;500;600;700&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="css/style.css?v=1.6" />
+    <link rel="stylesheet" href="css/style.css?v=2.0" />
     <script type="application/ld+json">
       {
         "@context": "https://schema.org",
-        "@type": "Store",
-        "name": "Antepli Veysel Usta",
+        "@type": "GeneralContractor",
+        "name": "Antepli Veysel Usta — İnşaat, Taahhüt ve Toptan Tedarik",
         "url": "https://antepliveyselusta.com",
-        "description": "Kuru bakliyat ve kuruyemiş dükkânı.",
+        "description": "Büyük ölçekli konut ve ticari inşaat taahhüt projeleri ile kurumsal toptan kuru bakliyat ve kuruyemiş tedariği.",
         "email": "info@antepliveyselusta.com",
         "address": {
           "@type": "PostalAddress",
@@ -44,6 +44,25 @@
   <body>
     <a class="skip" href="#icerik">İçeriğe geç</a>
 
+    <!-- Üst Kurumsal Bilgilendirme Şeridi -->
+    <aside class="notice-strip" aria-label="Kurumsal Duyuru">
+      <div class="notice-strip-inner">
+        <div style="display: flex; align-items: center; gap: 0.65rem; flex-wrap: wrap;">
+          <span class="notice-badge">⚠️ Önemli Bilgilendirme</span>
+          <span class="notice-text">
+            Firmamız <strong>Toptan Satış ve Kurumsal Taahhüt</strong> odaklıdır. <strong>Perakende satışımız yoktur.</strong>
+          </span>
+        </div>
+        <div>
+          <a class="notice-link" href="#teklif">
+            <span>🏛️ Kurumsal Fiyat Teklifi Talep Edin</span>
+            <span aria-hidden="true">→</span>
+          </a>
+        </div>
+      </div>
+    </aside>
+
+    <!-- Ana Başlık / Navigasyon -->
     <header class="site-header">
       <div class="header-inner">
         <a class="brand" href="#ust" aria-label="Antepli Veysel Usta — Ana Sayfa">
@@ -52,151 +71,1069 @@
           </div>
           <div class="brand-text">
             <span class="brand-name">Antepli Veysel Usta</span>
-            <span class="brand-subtitle">Kuru Bakliyat &amp; Kuruyemiş</span>
+            <span class="brand-subtitle">İnşaat &amp; Toptan Tedarik</span>
           </div>
         </a>
+
         <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="menu">
           <span class="nav-toggle-lines" aria-hidden="true"></span>
           <span class="visually-hidden">Menü</span>
         </button>
+
         <nav class="nav" id="menu" aria-label="Sayfa">
-          <a href="#tezgah">Tezgâh</a>
-          <a href="#hakkimizda">Hakkımızda</a>
-          <a href="#konum">Konum</a>
+          <a href="#sektorler">Sektörler</a>
+          <a href="#insaat">İnşaat Projeleri</a>
+          <a href="#kurumsal">Kurumsal Tedarik</a>
+          <a href="#urunler-bakliyat">Toptan Bakliyat</a>
+          <a href="#urunler-kuruyemis">Toptan Kuruyemiş</a>
+          <a href="#konum">İletişim &amp; Konum</a>
+          <a class="btn-rfq" href="#teklif">Teklif Al</a>
         </nav>
       </div>
     </header>
 
     <main id="icerik">
-      <section class="hero" id="ust">
-        <div class="hero-copy">
-          <p class="script">Hoş geldiniz</p>
-          <h1>Antepli<br />Veysel Usta</h1>
-          <p class="eyebrow">Kuru bakliyat ve kuruyemiş</p>
-          <p class="lede">
-            Yemeklik bakliyat ile çiğ ve kavrulmuş kuruyemiş. Günlük mutfak ve
-            ikram sofrası için, tezgâhın başından.
-          </p>
-          <a class="button" href="#tezgah">Tezgâha bak</a>
-        </div>
-        <div class="hero-visual">
-          <div class="mat">
-            <div
-              class="shot shot-portrait"
-              data-photo="images/vitrin"
-              data-alt="Antepli Veysel Usta tezgâhından bir görünüm"
-            >
-              <div class="shot-empty">
-                <span class="monogram" aria-hidden="true">VU</span>
-                <p>Görsel eklenecek</p>
-                <code>images/vitrin.jpg</code>
+      <!-- KDL Stili Büyük Grup & Sektör Hero Bölümü -->
+      <section class="corp-hero" id="ust">
+        <div class="corp-hero-inner">
+          <div class="corp-hero-copy">
+            <div class="corp-tagline-kdl">Girdiğimiz Her Sektörde İz Bırakıyoruz</div>
+            <h1 class="corp-hero-title">
+              Geleceğin Yapılarını ve <br />
+              <span class="highlight-blue">Güvenli Tedariği</span> <br />
+              İnşa Ediyoruz.
+            </h1>
+            <p class="corp-hero-desc">
+              Antepli Veysel Usta güvencesiyle; modern mimarinin seçkin konut ve ticari inşaat projelerini hayata geçiriyor, kamu kurumlarına, askeri birliklere ve sanayi kuruluşlarına <strong>tonajlı toptan bakliyat ve kuruyemiş</strong> tedariği sağlıyoruz.
+            </p>
+            <div class="corp-hero-cta">
+              <a class="button button-primary" href="#insaat">İnşaat Projelerimiz</a>
+              <a class="button button-outline" href="#urunler-bakliyat">Toptan Ürün Kataloğu</a>
+              <a class="button button-ghost" href="#teklif">Kurumsal Teklif İste ↗</a>
+            </div>
+          </div>
+          <div class="corp-hero-visual">
+            <div class="corp-hero-img-box">
+              <img
+                src="images/insaat-kule.jpg"
+                alt="Antepli Veysel Usta Yüksek Katlı İnşaat ve Kule Projesi"
+                loading="eager"
+              />
+            </div>
+            <div class="corp-floating-badge">
+              <div class="corp-floating-badge-icon">🏗️</div>
+              <div class="corp-floating-badge-text">
+                <strong>150.000+ m²</strong>
+                <span>Tamamlanan &amp; Devam Eden İnşaat Alanı</span>
               </div>
             </div>
           </div>
-          <div class="seal" aria-hidden="true">
-            <span>Antepli</span>
-            <strong>V.U.</strong>
-            <span>Tezgâh</span>
+        </div>
+      </section>
+
+      <!-- Metrikler & Rakamlarla Gücümüz -->
+      <section class="metrics-strip" aria-label="Temel Göstergeler">
+        <div class="metrics-grid">
+          <div class="metric-item">
+            <div class="metric-val">150.000+ m²</div>
+            <div class="metric-lbl">İnşaat &amp; Taahhüt Alanı</div>
+            <div class="metric-desc">Konut, Ticari Plaza ve Sanayi Depoları</div>
+          </div>
+          <div class="metric-item">
+            <div class="metric-val">15.000+ Ton</div>
+            <div class="metric-lbl">Yıllık Toptan Sevkiyat</div>
+            <div class="metric-desc">Bakliyat, pirinç ve kuruyemiş hacmi</div>
+          </div>
+          <div class="metric-item">
+            <div class="metric-val">350+ Kurum</div>
+            <div class="metric-lbl">Kamu &amp; Sanayi Çözüm Ortağı</div>
+            <div class="metric-desc">Yemekhaneler, fabrikalar ve kurumlar</div>
+          </div>
+          <div class="metric-item">
+            <div class="metric-val">40+ Yıl</div>
+            <div class="metric-lbl">Köklü Esnaf &amp; Taahhüt Tecrübesi</div>
+            <div class="metric-desc">Gaziantep menşeli güvenilir sermaye</div>
           </div>
         </div>
       </section>
 
-      <section class="band" aria-label="Dükkânın üç hali">
-        <ul>
-          <li>
-            <strong>Kuru bakliyat</strong>
-            <span>Yemeklik ve kışlık</span>
-          </li>
-          <li>
-            <strong>Kuruyemiş</strong>
-            <span>Çiğ ve kavrulmuş</span>
-          </li>
-          <li>
-            <strong>Tezgâh başı</strong>
-            <span>Tartarak, anlatarak</span>
-          </li>
-        </ul>
-      </section>
-
-      <section class="section" id="tezgah">
-        <div class="section-head">
-          <p class="script">Ne satıyoruz</p>
-          <h2>Tezgâhta</h2>
-          <p class="section-lead">
-            Dükkânın işi iki grupta toplanır: kuru bakliyat ve kuruyemiş.
+      <!-- Faaliyet Alanlarımız / 4 Sektör -->
+      <section class="sectors-overview" id="sektorler">
+        <div class="section-head" style="text-align: center; max-width: 800px; margin: 0 auto 2.5rem;">
+          <p class="section-tag">Kurumsal Güç</p>
+          <h2 class="section-main-title">Faaliyet Alanlarımız &amp; Sektörlerimiz</h2>
+          <p class="section-desc">
+            Antepli Veysel Usta, inşaat mühendisliğinden endüstriyel gıda tedariğine uzanan entegre yapısıyla kurumlara ve projelere tam kapsamlı hizmet vermektedir.
           </p>
         </div>
-        <div class="cards">
-          <article class="card">
-            <div
-              class="shot shot-wide"
-              data-photo="images/bakliyat"
-              data-alt="Kuru bakliyat"
-            >
-              <div class="shot-empty">
-                <span class="monogram" aria-hidden="true">B</span>
-                <p>Görsel eklenecek</p>
-                <code>images/bakliyat.jpg</code>
-              </div>
-            </div>
-            <div class="card-body">
-              <h3>Kuru bakliyat</h3>
+
+        <div class="header-inner" style="width: min(1200px, calc(100% - 2.5rem));">
+          <div class="sector-quad-grid" style="width: 100%;">
+            <article class="sector-card">
+              <div class="sector-card-icon">🏗️</div>
+              <h3>İnşaat &amp; Proje Taahhüt</h3>
               <p>
-                Yemeklik ve kışlık kuru bakliyat. Çorbanın, tencerenin ve ev
-                erzağının temel taneleri bu tezgahta tartılır.
+                Lüks rezidanslar, konut projeleri, cadde üzeri modern ticaret merkezleri ve endüstriyel lojistik yapıları mühendislik disipliniyle inşa ediyoruz.
               </p>
-            </div>
-          </article>
-          <article class="card">
-            <div
-              class="shot shot-wide"
-              data-photo="images/kuruyemis"
-              data-alt="Kuruyemiş"
-            >
-              <div class="shot-empty">
-                <span class="monogram" aria-hidden="true">K</span>
-                <p>Görsel eklenecek</p>
-                <code>images/kuruyemis.jpg</code>
-              </div>
-            </div>
-            <div class="card-body">
-              <h3>Kuruyemiş</h3>
+              <a class="sector-card-link" href="#insaat">Projeleri İncele →</a>
+            </article>
+
+            <article class="sector-card">
+              <div class="sector-card-icon">🌾</div>
+              <h3>Toptan Kuru Bakliyat</h3>
               <p>
-                Çiğ ve kavrulmuş kuruyemiş. Misafir sofrası, kahve yanı ve gün
-                içi atıştırmalık için.
+                Gaziantep yerli mercimek, Koçbaşı nohut, Dermason fasulye ve Baldo pirinçte tonajlı tır sevkiyatı ve kamu ihale standartlarına tam uyum.
               </p>
-            </div>
-          </article>
+              <a class="sector-card-link" href="#urunler-bakliyat">Bakliyat Kataloğu →</a>
+            </article>
+
+            <article class="sector-card">
+              <div class="sector-card-icon">🥜</div>
+              <h3>Toptan Kuruyemiş</h3>
+              <p>
+                Gaziantep Boz Antep fıstığı, Giresun yağlı iç fındık, ceviz, badem ve kuru meyvelerde toptancı, gıda imalatçısı ve zincir tedariği.
+              </p>
+              <a class="sector-card-link" href="#urunler-kuruyemis">Kuruyemiş Kataloğu →</a>
+            </article>
+
+            <article class="sector-card">
+              <div class="sector-card-icon">🚛</div>
+              <h3>Lojistik &amp; Kurumsal Depolama</h3>
+              <p>
+                35.000 m² Başpınar OSB depo altyapısı, iklimlendirmeli depolama, paletli ve tır bazlı Türkiye geneli hızlı sevkiyat ağı.
+              </p>
+              <a class="sector-card-link" href="#kurumsal">Lojistik Detayları →</a>
+            </article>
+          </div>
         </div>
       </section>
 
+      <!-- ============================================================
+           BÜYÜK İNŞAAT VE PROJE VİTRİNİ (Mert Güllüoğlu Stili)
+           ============================================================ -->
+      <section class="construction-showcase" id="insaat">
+        <div class="section-head" style="text-align: center; max-width: 850px; margin: 0 auto;">
+          <p class="section-tag">Geleceğin Yapıları</p>
+          <h2 class="section-main-title">Büyük İnşaat &amp; Taahhüt Projelerimiz</h2>
+          <p class="section-desc">
+            Sadece bina değil, güvenli yaşam ve ticaret alanları üretiyoruz. Gaziantep ve Ankara başta olmak üzere imza attığımız prestijli projelerimiz:
+          </p>
+        </div>
+
+        <div class="header-inner" style="width: min(1200px, calc(100% - 2.5rem));">
+          <div class="projects-grid" style="width: 100%;">
+            <!-- Proje 1 -->
+            <article class="project-card">
+              <div class="project-media">
+                <img
+                  src="images/insaat-rezidans.jpg"
+                  alt="İbrahimli Prestij Konutları & Rezidans Kuleleri"
+                  loading="lazy"
+                />
+                <span class="project-status-badge completed">Tamamlandı / Yaşam Başladı</span>
+                <span class="project-loc-tag">📍 Şehitkamil / Gaziantep</span>
+              </div>
+              <div class="project-details">
+                <h3 class="project-title">İbrahimli Prestij Konutları &amp; Kuleleri</h3>
+                <div class="project-subtitle">Seçkin Lokasyonda Modern ve Nitelikli Yaşam Alanı</div>
+                <p class="project-desc">
+                  Gaziantep İbrahimli'nin en prestijli bölgesinde yükselen 4 blokluk proje; geniş peyzaj alanları, kapalı otoparkı, akıllı bina otomasyonu ve depreme tam dayanıklı statik çözümleriyle bölgenin referans yapısıdır.
+                </p>
+                <div class="project-specs-grid">
+                  <div class="project-spec-item">
+                    <span class="project-spec-label">İnşaat Alanı</span>
+                    <span class="project-spec-value">28.500 m²</span>
+                  </div>
+                  <div class="project-spec-item">
+                    <span class="project-spec-label">Konut Sayısı</span>
+                    <span class="project-spec-value">64 Daire (4+1 &amp; 3+1)</span>
+                  </div>
+                  <div class="project-spec-item">
+                    <span class="project-spec-label">Ticari Ünite</span>
+                    <span class="project-spec-value">12 Bulvar Mağazası</span>
+                  </div>
+                </div>
+                <div class="project-features">
+                  <span class="project-feature-pill">✓ 7/24 Özel Güvenlik</span>
+                  <span class="project-feature-pill">✓ Çift Katlı Kapalı Otopark</span>
+                  <span class="project-feature-pill">✓ 8.000 m² Sosyal Peyzaj</span>
+                  <span class="project-feature-pill">✓ C35/40 Yüksek Mukavemet Beton</span>
+                </div>
+              </div>
+            </article>
+
+            <!-- Proje 2 -->
+            <article class="project-card">
+              <div class="project-media">
+                <img
+                  src="images/insaat-plaza.jpg"
+                  alt="Emek Bulvar Ticaret Merkezi ve Plaza"
+                  loading="lazy"
+                />
+                <span class="project-status-badge completed">Tamamlandı &amp; Teslim</span>
+                <span class="project-loc-tag">📍 Emek Bulvarı / Gaziantep</span>
+              </div>
+              <div class="project-details">
+                <h3 class="project-title">Emek Bulvar Ticaret Merkezi &amp; Plaza</h3>
+                <div class="project-subtitle">Ali Nadi Ünler Bulvarı Cepheli A+ Ofis &amp; Mağaza Kompleksi</div>
+                <p class="project-desc">
+                  Şehrin en işlek ticaret aksında yer alan kurumsal iş merkezi. Geniş cepheli cadde mağazaları, A sınıfı bağımsız ofis katları, yangın ve iklimlendirme altyapısıyla bölgenin ticari kalbidir.
+                </p>
+                <div class="project-specs-grid">
+                  <div class="project-spec-item">
+                    <span class="project-spec-label">İnşaat Alanı</span>
+                    <span class="project-spec-value">15.200 m²</span>
+                  </div>
+                  <div class="project-spec-item">
+                    <span class="project-spec-label">Ofis Ünitesi</span>
+                    <span class="project-spec-value">32 Prestij Ofis</span>
+                  </div>
+                  <div class="project-spec-item">
+                    <span class="project-spec-label">Cadde Mağazası</span>
+                    <span class="project-spec-value">8 Geniş Mağaza</span>
+                  </div>
+                </div>
+                <div class="project-features">
+                  <span class="project-feature-pill">✓ Modüler Ofis Mimarisi</span>
+                  <span class="project-feature-pill">✓ Kapalı &amp; Açık Otopark</span>
+                  <span class="project-feature-pill">✓ Fiber Altyapı &amp; Jeneratör</span>
+                  <span class="project-feature-pill">✓ Yangın &amp; Duman Tahliye Sistemi</span>
+                </div>
+              </div>
+            </article>
+
+            <!-- Proje 3 -->
+            <article class="project-card">
+              <div class="project-media">
+                <img
+                  src="images/insaat-kule.jpg"
+                  alt="Kızılhisar Vadi Konakları ve Kuleleri"
+                  loading="lazy"
+                />
+                <span class="project-status-badge">Son Etap / İmalat Sürüyor</span>
+                <span class="project-loc-tag">📍 Beştepe &amp; Kızılhisar / Gaziantep</span>
+              </div>
+              <div class="project-details">
+                <h3 class="project-title">Kızılhisar Vadi Konakları &amp; Kuleleri</h3>
+                <div class="project-subtitle">Geniş Vadi Manzaralı Bahçeli Konut ve Rezidanslar</div>
+                <p class="project-desc">
+                  Doğa ile iç içe, yatay ve dikey mimarinin ahenkle harmanlandığı lüks yaşam kompleksi. Özel bahçe katları, geniş teraslar, yürüyüş parkurları ve tam donanımlı spor alanları.
+                </p>
+                <div class="project-specs-grid">
+                  <div class="project-spec-item">
+                    <span class="project-spec-label">Proje Alanı</span>
+                    <span class="project-spec-value">19.400 m²</span>
+                  </div>
+                  <div class="project-spec-item">
+                    <span class="project-spec-label">Konut Sayısı</span>
+                    <span class="project-spec-value">48 Özel Rezidans</span>
+                  </div>
+                  <div class="project-spec-item">
+                    <span class="project-spec-label">Yeşil Alan</span>
+                    <span class="project-spec-value">%65 Peyzaj Oranı</span>
+                  </div>
+                </div>
+                <div class="project-features">
+                  <span class="project-feature-pill">✓ Doğal Taş Cephe Kaplaması</span>
+                  <span class="project-feature-pill">✓ Çocuk Oyun Parkları</span>
+                  <span class="project-feature-pill">✓ Müstakil Girişli Villalar</span>
+                  <span class="project-feature-pill">✓ Isı Yalıtım A+ Sınıfı</span>
+                </div>
+              </div>
+            </article>
+
+            <!-- Proje 4 -->
+            <article class="project-card">
+              <div class="project-media">
+                <img
+                  src="images/toptan-depo.jpg"
+                  alt="Başpınar Endüstriyel Depolama ve Lojistik Merkezi"
+                  loading="lazy"
+                />
+                <span class="project-status-badge completed">Faaliyette / Lojistik Üssü</span>
+                <span class="project-loc-tag">📍 Başpınar OSB / Gaziantep</span>
+              </div>
+              <div class="project-details">
+                <h3 class="project-title">Başpınar OSB Lojistik &amp; Depo Kompleksi</h3>
+                <div class="project-subtitle">Büyük Ölçekli Toptan Gıda &amp; Endüstriyel Depolama Tesisi</div>
+                <p class="project-desc">
+                  Antepli Veysel Usta'nın toptan bakliyat ve kuruyemiş operasyonlarının yönetildiği, tır yanaşma rampalarına, iklim kontrollü silolara ve paletli raf sistemlerine sahip endüstriyel merkez.
+                </p>
+                <div class="project-specs-grid">
+                  <div class="project-spec-item">
+                    <span class="project-spec-label">Kapalı Alan</span>
+                    <span class="project-spec-value">35.000 m²</span>
+                  </div>
+                  <div class="project-spec-item">
+                    <span class="project-spec-label">Depolama Hacmi</span>
+                    <span class="project-spec-value">40.000 Palet</span>
+                  </div>
+                  <div class="project-spec-item">
+                    <span class="project-spec-label">Yükleme Rampası</span>
+                    <span class="project-spec-value">16 Tır Eşzamanlı</span>
+                  </div>
+                </div>
+                <div class="project-features">
+                  <span class="project-feature-pill">✓ İklimlendirmeli Soğuk Hava Deposu</span>
+                  <span class="project-feature-pill">✓ Otomasyonlu Paletleme</span>
+                  <span class="project-feature-pill">✓ Gıda Güvenliği ISO 22000 Standart</span>
+                  <span class="project-feature-pill">✓ 7/24 Kesintisiz Sevkiyat</span>
+                </div>
+              </div>
+            </article>
+          </div>
+
+          <!-- KDL Stili Büyük İnşaat Çözüm Bannerı -->
+          <div class="construction-banner-box" style="width: 100%;">
+            <div class="construction-banner-content">
+              <span style="color: #fcd34d; font-size: 0.85rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.1em; display: block; margin-bottom: 0.5rem;">
+                Mühendislik &amp; Taahhüt Güvencesi
+              </span>
+              <h3>Modern Yaşamı İnşa Eden Projelerimizle Fark Yaratıyoruz</h3>
+              <p>
+                Statik hesaplamalardan en ince mimari detaylara kadar, uluslararası standartlarda inşaat teknolojileri uyguluyoruz. Arsa geliştirme, kat karşılığı taahhüt, sanayi yapısı inşası ve kamu ihalelerinde güvenilir çözüm ortağınızız.
+              </p>
+              <div>
+                <a class="button button-primary" href="#teklif">İnşaat Projesi İçin İletişime Geçin</a>
+              </div>
+            </div>
+            <div class="construction-banner-media">
+              <img
+                src="images/insaat-santiye.jpg"
+                alt="Şantiye Mimari Proje Çizimleri ve Baret"
+                loading="lazy"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ============================================================
+           KURUMSAL TOPTAN TEDARİK (PERAKENDE SATIŞ YOKTUR VURGUSU)
+           ============================================================ -->
+      <section class="wholesale-section" id="kurumsal">
+        <div class="header-inner" style="width: min(1200px, calc(100% - 2.5rem));">
+          <!-- Büyük Uyarı & Kurumsal Kimlik Kartı -->
+          <div class="institutional-focus-box">
+            <div class="institutional-focus-icon">🏛️</div>
+            <div class="institutional-focus-text">
+              <h3>Biz Toptancıyız — Perakende Satışımız Bulunmamaktadır!</h3>
+              <p>
+                Antepli Veysel Usta, <strong>büyük kurumlar, askeri tesisler, üniversite ve hastane yemekhaneleri, sanayi fabrikaları, zincir oteller ve ihracatçılar</strong> için yüksek hacimli toptan tedarikçidir. Bütün ürünlerimiz parti analizli, standart kalibreli, çuvallı (25 kg / 50 kg), paletli ve tonajlı tır bazında sevk edilir.
+              </p>
+            </div>
+            <div>
+              <a class="institutional-focus-btn" href="#teklif">Toptan Fiyat Teklifi Al</a>
+            </div>
+          </div>
+
+          <div class="section-head" style="text-align: center; max-width: 800px; margin: 0 auto 3rem;">
+            <p class="section-tag">Kurumsal Ağımız</p>
+            <h2 class="section-main-title">Hizmet Verdiğimiz Kurumsal Alanlar</h2>
+            <p class="section-desc">
+              Düzenli parti teslimatı, sabit fiyat protokolleri ve akredite gıda güvencesiyle çalıştığımız başlıca sektörler:
+            </p>
+          </div>
+
+          <div class="clients-grid">
+            <div class="client-item">
+              <div class="client-item-icon">🎖️</div>
+              <div>
+                <h4>Kamu Kurumları &amp; Askeri Birlikler</h4>
+                <p>
+                  Kamu İhale Kanunu teknik şartnamelerine %100 uygun, parti analiz ve hijyen raporlu tonajlı bakliyat tedariği.
+                </p>
+              </div>
+            </div>
+
+            <div class="client-item">
+              <div class="client-item-icon">🏥</div>
+              <div>
+                <h4>Hastane &amp; Üniversite Yemekhaneleri</h4>
+                <p>
+                  Yüksek porsiyon kapasiteli mutfaklar için homojen kalibre, hızlı pişen, fire vermeyen 1. sınıf kuru bakliyat ve pirinç.
+                </p>
+              </div>
+            </div>
+
+            <div class="client-item">
+              <div class="client-item-icon">🏭</div>
+              <div>
+                <h4>Fabrika &amp; Büyük Şantiye Yemekhaneleri</h4>
+                <p>
+                  Vardiyalı çalışan sanayi tesisleri ve şantiyeler için kesintisiz periyodik çuval ve palet bazlı kuru erzak sevkiyatı.
+                </p>
+              </div>
+            </div>
+
+            <div class="client-item">
+              <div class="client-item-icon">🏨</div>
+              <div>
+                <h4>Otel Zincirleri &amp; Catering Şirketleri</h4>
+                <p>
+                  5 yıldızlı açık büfe standartlarında lüks kavrulmuş kuruyemiş, çiğ kuruyemişler ve şeflerin tercihi Baldo &amp; İspir grupları.
+                </p>
+              </div>
+            </div>
+
+            <div class="client-item">
+              <div class="client-item-icon">🧁</div>
+              <div>
+                <h4>Baklavacılar, Pastaneler &amp; Gıda İmalatı</h4>
+                <p>
+                  Doğrudan Gaziantep'ten hakiki boz Antep fıstığı içi (Kuşboku), Giresun iç fındık, kelebek ceviz içi endüstriyel hammadde tedariği.
+                </p>
+              </div>
+            </div>
+
+            <div class="client-item">
+              <div class="client-item-icon">📦</div>
+              <div>
+                <h4>Toptancı Halleri &amp; Dağıtıcı Zincirleri</h4>
+                <p>
+                  Bölge distribütörleri ve toptan gıda tüccarları için tır ve vagon bazında yüksek tonajlı sevkiyat ve bayilik çözümleri.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Lojistik ve Ambalajlama Şartları -->
+          <div class="packaging-specs">
+            <h3>Toptan Sevkiyat &amp; Ambalajlama Standartlarımız</h3>
+            <div class="packaging-grid">
+              <div class="pack-box">
+                <div class="pack-box-title">25 Kg Lamine Çuval</div>
+                <div class="pack-box-sub">Nem ve rutubet geçirmez, gıdaya uygun lamine iç katmanlı polipropilen çuvallar.</div>
+              </div>
+              <div class="pack-box">
+                <div class="pack-box-title">50 Kg Jüt / PP Çuval</div>
+                <div class="pack-box-sub">Yüksek tonajlı endüstriyel sevkiyatlar, askeriye ve yemekhane standart çuvalları.</div>
+              </div>
+              <div class="pack-box">
+                <div class="pack-box-title">1.000 Kg Big-Bag</div>
+                <div class="pack-box-sub">Otomatik dolum hatlarına sahip sanayi tesisleri ve paketleme fabrikaları için dev torba.</div>
+              </div>
+              <div class="pack-box">
+                <div class="pack-box-title">Paletli Tır Sevkiyatı</div>
+                <div class="pack-box-sub">Euro palet üzerinde streçli, çemberli ve barkodlu tam tır (24-26 Ton) sevkiyat ağı.</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ============================================================
+           ÇEŞİTLENDİRİLMİŞ TOPTAN KURU BAKLİYAT KATALOĞU
+           ============================================================ -->
+      <section class="products-deep-catalog" id="urunler-bakliyat">
+        <div class="header-inner" style="width: min(1200px, calc(100% - 2.5rem));">
+          <div class="section-head" style="text-align: center; max-width: 850px; margin: 0 auto;">
+            <p class="section-tag">Doğrudan Tarladan Depoya</p>
+            <h2 class="section-main-title">Toptan Kuru Bakliyat Çeşitlerimiz</h2>
+            <p class="section-desc">
+              Gaziantep, Konya, Çorum ve Trakya ovalarından özenle elenmiş, boylanmış, taşından ve yabancı maddelerinden optik ayırıcılarla arındırılmış yüksek kaliteli bakliyat portföyümüz:
+            </p>
+          </div>
+
+          <!-- Mercimek & Nohut Grubu -->
+          <div class="catalog-category-header">
+            <h3 class="catalog-cat-title">Mercimek &amp; Nohut Grubu</h3>
+            <span class="catalog-cat-badge">25 Kg / 50 Kg Çuval &amp; Big-Bag</span>
+          </div>
+
+          <div class="products-table-grid">
+            <div class="prod-item-card">
+              <div class="prod-top-row">
+                <h4 class="prod-name">Gaziantep Futbol Kırmızı Mercimek</h4>
+                <span class="prod-origin">Gaziantep / Yerli</span>
+              </div>
+              <div class="prod-specs-meta">Kalibre: <strong>1. Sınıf Seçme</strong> | Yağ: <strong>Naturel Parlatılmış</strong></div>
+              <p class="prod-desc-line">Çorbalık kullanımda yüksek kıvam verir, rengi canlı kırmızıdır, homojen pişer.</p>
+              <div class="prod-packaging-tags">
+                <span class="prod-pkg-tag">25 Kg Çuval</span>
+                <span class="prod-pkg-tag">50 Kg Çuval</span>
+                <span class="prod-pkg-tag">Paletli Sevkiyat</span>
+              </div>
+            </div>
+
+            <div class="prod-item-card">
+              <div class="prod-top-row">
+                <h4 class="prod-name">Yaprak Kırmızı Mercimek</h4>
+                <span class="prod-origin">Güneydoğu Anadolu</span>
+              </div>
+              <div class="prod-specs-meta">Kalibre: <strong>İnce Yaprak</strong> | Rutubet: <strong>Max %14</strong></div>
+              <p class="prod-desc-line">Hızlı pişen, kurum ve askeriye yemekhanelerinin en çok talep ettiği standart kalite.</p>
+              <div class="prod-packaging-tags">
+                <span class="prod-pkg-tag">25 Kg Çuval</span>
+                <span class="prod-pkg-tag">50 Kg Çuval</span>
+                <span class="prod-pkg-tag">Tonajlı Tır</span>
+              </div>
+            </div>
+
+            <div class="prod-item-card">
+              <div class="prod-top-row">
+                <h4 class="prod-name">Yozgat Yeşil Mercimek</h4>
+                <span class="prod-origin">İç Anadolu</span>
+              </div>
+              <div class="prod-specs-meta">Kalibre: <strong>8 mm Kalibre</strong> | Saflık: <strong>%99.5</strong></div>
+              <p class="prod-desc-line">Dolgun taneli, kabuk atmayan, salata ve yemeklik için ideal lif ve protein zengini.</p>
+              <div class="prod-packaging-tags">
+                <span class="prod-pkg-tag">25 Kg Çuval</span>
+                <span class="prod-pkg-tag">50 Kg Çuval</span>
+              </div>
+            </div>
+
+            <div class="prod-item-card">
+              <div class="prod-top-row">
+                <h4 class="prod-name">Koçbaşı Toptan Nohut (9 mm)</h4>
+                <span class="prod-origin">Konya / Aksaray</span>
+              </div>
+              <div class="prod-specs-meta">Kalibre: <strong>9 mm Elek Üstü</strong> | Pişme: <strong>Hızlı Yumuşayan</strong></div>
+              <p class="prod-desc-line">Yemekhane ve catering sektörünün vazgeçilmezi; kabuk bırakmaz, lezzetli ve iri.</p>
+              <div class="prod-packaging-tags">
+                <span class="prod-pkg-tag">25 Kg Çuval</span>
+                <span class="prod-pkg-tag">50 Kg Çuval</span>
+                <span class="prod-pkg-tag">Big-Bag</span>
+              </div>
+            </div>
+
+            <div class="prod-item-card">
+              <div class="prod-top-row">
+                <h4 class="prod-name">Mega Koçbaşı Nohut (10 mm)</h4>
+                <span class="prod-origin">Yerli Seçme Mega</span>
+              </div>
+              <div class="prod-specs-meta">Kalibre: <strong>10 mm Mega Kalibre</strong> | Sınıf: <strong>Ekstra Lüks</strong></div>
+              <p class="prod-desc-line">Restoranlar, oteller ve lüks tüketim için dev boy Koçbaşı kalitesi.</p>
+              <div class="prod-packaging-tags">
+                <span class="prod-pkg-tag">25 Kg Lamine Çuval</span>
+                <span class="prod-pkg-tag">Paletli</span>
+              </div>
+            </div>
+
+            <div class="prod-item-card">
+              <div class="prod-top-row">
+                <h4 class="prod-name">Sarı Mercimek (Kabuksuz)</h4>
+                <span class="prod-origin">Yerli &amp; İthal Seçme</span>
+              </div>
+              <div class="prod-specs-meta">Kalibre: <strong>Futbol Form</strong> | Protein: <strong>Yüksek Besin Değeri</strong></div>
+              <p class="prod-desc-line">Gurme çorbalar, catering mutfakları ve unlu mamul dolguları için homojen ürün.</p>
+              <div class="prod-packaging-tags">
+                <span class="prod-pkg-tag">25 Kg Çuval</span>
+                <span class="prod-pkg-tag">50 Kg Çuval</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Fasulye, Pirinç & Bulgur Grubu -->
+          <div class="catalog-category-header">
+            <h3 class="catalog-cat-title">Fasulye, Pirinç &amp; Bulgur Grubu</h3>
+            <span class="catalog-cat-badge">Yemekhane &amp; Kurumsal Boy</span>
+          </div>
+
+          <div class="products-table-grid">
+            <div class="prod-item-card">
+              <div class="prod-top-row">
+                <h4 class="prod-name">Karaman Dermason Fasulye</h4>
+                <span class="prod-origin">Karaman / Niğde</span>
+              </div>
+              <div class="prod-specs-meta">Kalibre: <strong>8-9 mm Dolgun</strong> | Pişme: <strong>Lokum Kıvamı</strong></div>
+              <p class="prod-desc-line">Zarı ince, pişerken dağılmayan ve suyu kıvamlandıran geleneksel kuru fasulye.</p>
+              <div class="prod-packaging-tags">
+                <span class="prod-pkg-tag">25 Kg Çuval</span>
+                <span class="prod-pkg-tag">50 Kg Çuval</span>
+                <span class="prod-pkg-tag">Paletli</span>
+              </div>
+            </div>
+
+            <div class="prod-item-card">
+              <div class="prod-top-row">
+                <h4 class="prod-name">İspir Şeker Fasulyesi</h4>
+                <span class="prod-origin">Erzurum İspir (Coğrafi İşaret)</span>
+              </div>
+              <div class="prod-specs-meta">Kalibre: <strong>Yuvarlak Tombul</strong> | Sınıf: <strong>Premium Gurme</strong></div>
+              <p class="prod-desc-line">Mideye dokunmayan, kendine has tatlı aromasıyla Türkiye'nin en seçkin fasulyesi.</p>
+              <div class="prod-packaging-tags">
+                <span class="prod-pkg-tag">25 Kg Özel Çuval</span>
+              </div>
+            </div>
+
+            <div class="prod-item-card">
+              <div class="prod-top-row">
+                <h4 class="prod-name">Gönen Baldo Pirinç</h4>
+                <span class="prod-origin">Balıkesir Gönen</span>
+              </div>
+              <div class="prod-specs-meta">Kalibre: <strong>1. Grup İri Tane</strong> | Kırık: <strong>Max %2</strong></div>
+              <p class="prod-desc-line">Tane tane dökülen, yüksek su çeken, lezzetli ve parlak beyaz baldo pirinç.</p>
+              <div class="prod-packaging-tags">
+                <span class="prod-pkg-tag">25 Kg Lamine Çuval</span>
+                <span class="prod-pkg-tag">50 Kg Çuval</span>
+              </div>
+            </div>
+
+            <div class="prod-item-card">
+              <div class="prod-top-row">
+                <h4 class="prod-name">Trakya Osmancık Pirinç</h4>
+                <span class="prod-origin">Edirne / Meriç</span>
+              </div>
+              <div class="prod-specs-meta">Kalibre: <strong>Orta-Uzun Tane</strong> | Kırık: <strong>Max %3</strong></div>
+              <p class="prod-desc-line">Yemekhane, askeriye ve sanayi yemekhanelerinde yüksek porsiyon verimi sağlayan standart pirinç.</p>
+              <div class="prod-packaging-tags">
+                <span class="prod-pkg-tag">25 Kg Çuval</span>
+                <span class="prod-pkg-tag">50 Kg Çuval</span>
+                <span class="prod-pkg-tag">Tır Bazı</span>
+              </div>
+            </div>
+
+            <div class="prod-item-card">
+              <div class="prod-top-row">
+                <h4 class="prod-name">Gaziantep Taş Değirmen İri Bulgur</h4>
+                <span class="prod-origin">Gaziantep Yerli Durum</span>
+              </div>
+              <div class="prod-specs-meta">Kalibre: <strong>İri Pilavlık</strong> | Hammadde: <strong>Sert Durum Buğdayı</strong></div>
+              <p class="prod-desc-line">Geleneksel kaynatma ve kurutma yöntemleriyle hazırlanmış, sapsarı mis kokulu pilavlık bulgur.</p>
+              <div class="prod-packaging-tags">
+                <span class="prod-pkg-tag">25 Kg Çuval</span>
+                <span class="prod-pkg-tag">50 Kg Çuval</span>
+              </div>
+            </div>
+
+            <div class="prod-item-card">
+              <div class="prod-top-row">
+                <h4 class="prod-name">Köftelik Esmer &amp; Sarı Bulgur</h4>
+                <span class="prod-origin">Gaziantep</span>
+              </div>
+              <div class="prod-specs-meta">Kalibre: <strong>İnce Kırık Simit</strong> | Kullanım: <strong>Çiğ Köfte &amp; İçli Köfte</strong></div>
+              <p class="prod-desc-line">Çiğ köfte fabrikaları ve restoranlar için elastikiyeti yüksek, kolay yoğrulan simit bulguru.</p>
+              <div class="prod-packaging-tags">
+                <span class="prod-pkg-tag">25 Kg Çuval</span>
+                <span class="prod-pkg-tag">50 Kg Çuval</span>
+              </div>
+            </div>
+
+            <div class="prod-item-card">
+              <div class="prod-top-row">
+                <h4 class="prod-name">Uzun Tane İthal Basmati Pirinç</h4>
+                <span class="prod-origin">Orijinal Basmati</span>
+              </div>
+              <div class="prod-specs-meta">Kalibre: <strong>Ekstra Uzun 1121</strong> | Glisemik: <strong>Düşük İndeks</strong></div>
+              <p class="prod-desc-line">Şeker yapmayan, pişince 2 katına uzayan, otel mutfakları için aromatik pirinç.</p>
+              <div class="prod-packaging-tags">
+                <span class="prod-pkg-tag">25 Kg Çuval</span>
+                <span class="prod-pkg-tag">Paletli</span>
+              </div>
+            </div>
+
+            <div class="prod-item-card">
+              <div class="prod-top-row">
+                <h4 class="prod-name">Horoz Barbunya &amp; Şeker Barbunya</h4>
+                <span class="prod-origin">İç Anadolu</span>
+              </div>
+              <div class="prod-specs-meta">Kalibre: <strong>Alacalı İri Tane</strong> | Pişme: <strong>Kabuk Bırakmaz</strong></div>
+              <p class="prod-desc-line">Zeytinyağlı yemeklerde mükemmel kıvam ve renk veren taze mahsul barbunya.</p>
+              <div class="prod-packaging-tags">
+                <span class="prod-pkg-tag">25 Kg Çuval</span>
+              </div>
+            </div>
+
+            <div class="prod-item-card">
+              <div class="prod-top-row">
+                <h4 class="prod-name">Cin Mısır (Patlak Mısır) &amp; Aşurelik Buğday</h4>
+                <span class="prod-origin">Yerli 1. Sınıf</span>
+              </div>
+              <div class="prod-specs-meta">Kalibre: <strong>Kelebek Açılan Mısır</strong> | Buğday: <strong>Soyulmuş Dövme</strong></div>
+              <p class="prod-desc-line">Yüksek patlama randımanı veren cin mısır ve geleneksel dövme aşurelik buğday.</p>
+              <div class="prod-packaging-tags">
+                <span class="prod-pkg-tag">25 Kg Çuval</span>
+                <span class="prod-pkg-tag">50 Kg Çuval</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ============================================================
+           ÇEŞİTLENDİRİLMİŞ TOPTAN KURUYEMİŞ KATALOĞU
+           ============================================================ -->
+      <section class="products-deep-catalog" id="urunler-kuruyemis" style="background: #ffffff;">
+        <div class="header-inner" style="width: min(1200px, calc(100% - 2.5rem));">
+          <div class="section-head" style="text-align: center; max-width: 850px; margin: 0 auto;">
+            <p class="section-tag">Gaziantep'ten Toptan Sevkiyat</p>
+            <h2 class="section-main-title">Toptan Kuruyemiş &amp; Endüstriyel Çeşitlerimiz</h2>
+            <p class="section-desc">
+              Doğrudan Gaziantep fıstık halleri, Giresun fındık borsası ve Malatya bahçelerinden temin edilen, hijyenik tesislerde işlenen toptan kuruyemiş portföyümüz:
+            </p>
+          </div>
+
+          <!-- Antep Fıstığı Grubu -->
+          <div class="catalog-category-header">
+            <h3 class="catalog-cat-title">Antep Fıstığı Grubu (Kabuklu &amp; İç Fıstık)</h3>
+            <span class="catalog-cat-badge">Koli / Vakumlu Çuval / Jüt Çuval</span>
+          </div>
+
+          <div class="products-table-grid">
+            <div class="prod-item-card">
+              <div class="prod-top-row">
+                <h4 class="prod-name">Gaziantep Duble Boz Kavrulmuş Fıstık</h4>
+                <span class="prod-origin">Gaziantep / Nizip</span>
+              </div>
+              <div class="prod-specs-meta">Çatlak Oranı: <strong>%98+ Anaçatlak</strong> | Tuz: <strong>Hafif Tuzlu Özel Fırın</strong></div>
+              <p class="prod-desc-line">İri kalibre, dolgun gövdeli, kapalı tanesi bulunmayan 1. sınıf ikramlık Antep fıstığı.</p>
+              <div class="prod-packaging-tags">
+                <span class="prod-pkg-tag">10 Kg Koli</span>
+                <span class="prod-pkg-tag">25 Kg Jüt Çuval</span>
+                <span class="prod-pkg-tag">50 Kg Çuval</span>
+              </div>
+            </div>
+
+            <div class="prod-item-card">
+              <div class="prod-top-row">
+                <h4 class="prod-name">Baklavalık Kuşboku Yeşil İç Fıstık</h4>
+                <span class="prod-origin">Erken Hasat Antep</span>
+              </div>
+              <div class="prod-specs-meta">Renk: <strong>Canlı Zümrüt Yeşili</strong> | Kalite: <strong>Ekstra Boz İç</strong></div>
+              <p class="prod-desc-line">Baklava ustalarının ve lüks pastanelerin vazgeçilmezi; yoğun aroma ve eşsiz yeşil renk.</p>
+              <div class="prod-packaging-tags">
+                <span class="prod-pkg-tag">5 Kg Vakum</span>
+                <span class="prod-pkg-tag">10 Kg Vakumlu Koli</span>
+                <span class="prod-pkg-tag">25 Kg Koli</span>
+              </div>
+            </div>
+
+            <div class="prod-item-card">
+              <div class="prod-top-row">
+                <h4 class="prod-name">Meverdi Kırmızı İç Antep Fıstığı</h4>
+                <span class="prod-origin">Gaziantep Olgun Hasat</span>
+              </div>
+              <div class="prod-specs-meta">Kullanım: <strong>Helva, Lokum &amp; Çikolata</strong> | Yağ: <strong>Yüksek Doğal Yağ</strong></div>
+              <p class="prod-desc-line">Endüstriyel gıda üreticileri, lokumcular ve helvacılar için lezzet ve maliyet dengeli hammadde.</p>
+              <div class="prod-packaging-tags">
+                <span class="prod-pkg-tag">10 Kg Koli</span>
+                <span class="prod-pkg-tag">25 Kg Çuval</span>
+              </div>
+            </div>
+
+            <div class="prod-item-card">
+              <div class="prod-top-row">
+                <h4 class="prod-name">File &amp; Pirinç Antep Fıstığı</h4>
+                <span class="prod-origin">Sanayi Tipi Doğranmış</span>
+              </div>
+              <div class="prod-specs-meta">Kesim: <strong>File Yaprak &amp; Pirinç Parça</strong> | Rutubet: <strong>Max %4</strong></div>
+              <p class="prod-desc-line">Pasta, dondurma ve sütlü tatlı üreticileri için hazır homojen doğranmış fıstık.</p>
+              <div class="prod-packaging-tags">
+                <span class="prod-pkg-tag">5 Kg Vakum</span>
+                <span class="prod-pkg-tag">10 Kg Koli</span>
+              </div>
+            </div>
+
+            <div class="prod-item-card">
+              <div class="prod-top-row">
+                <h4 class="prod-name">Siirt Tipi İri Anaçatlak Fıstık</h4>
+                <span class="prod-origin">Siirt / Batman</span>
+              </div>
+              <div class="prod-specs-meta">Kalibre: <strong>Mega İri Boy</strong> | Kavrum: <strong>Doğal Taş Fırın</strong></div>
+              <p class="prod-desc-line">Ağzı sonuna kadar açık, etli ve çıtır çıtır Siirt tipi özel seçim kavrulmuş fıstık.</p>
+              <div class="prod-packaging-tags">
+                <span class="prod-pkg-tag">10 Kg Koli</span>
+                <span class="prod-pkg-tag">25 Kg Çuval</span>
+              </div>
+            </div>
+
+            <div class="prod-item-card">
+              <div class="prod-top-row">
+                <h4 class="prod-name">Çiğ Kavrulmamış Kabuklu Fıstık</h4>
+                <span class="prod-origin">Yeni Mahsul Gaziantep</span>
+              </div>
+              <div class="prod-specs-meta">İşlem: <strong>İşlenmemiş Doğal</strong> | Nem: <strong>Kurutulmuş</strong></div>
+              <p class="prod-desc-line">Kendi fırınında kavurma yapan kuruyemişçiler ve toptancılar için ham mahsul fıstık.</p>
+              <div class="prod-packaging-tags">
+                <span class="prod-pkg-tag">50 Kg Jüt Çuval</span>
+                <span class="prod-pkg-tag">Tır Bazı</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Fındık, Badem, Ceviz & Kuru Meyve Grubu -->
+          <div class="catalog-category-header">
+            <h3 class="catalog-cat-title">Fındık, Badem, Ceviz &amp; Kuru Meyve</h3>
+            <span class="catalog-cat-badge">Toptan Koli &amp; Vakum</span>
+          </div>
+
+          <div class="products-table-grid">
+            <div class="prod-item-card">
+              <div class="prod-top-row">
+                <h4 class="prod-name">Giresun Tombul Yağlı İç Fındık</h4>
+                <span class="prod-origin">Giresun / Yağlı Dere</span>
+              </div>
+              <div class="prod-specs-meta">Kalibre: <strong>13-15 mm Elek</strong> | Form: <strong>Kavrulmuş &amp; Çiğ</strong></div>
+              <p class="prod-desc-line">Dünyanın en kaliteli fındığı; kabuksuz, zarı soyulmuş, çıtır ve yoğun aromalı.</p>
+              <div class="prod-packaging-tags">
+                <span class="prod-pkg-tag">10 Kg Vakumlu Koli</span>
+                <span class="prod-pkg-tag">25 Kg Vakumlu Çuval</span>
+              </div>
+            </div>
+
+            <div class="prod-item-card">
+              <div class="prod-top-row">
+                <h4 class="prod-name">Ekstra Kelebek Beyaz Ceviz İçi</h4>
+                <span class="prod-origin">Yerli Maraş 18 &amp; İthal</span>
+              </div>
+              <div class="prod-specs-meta">Kalite: <strong>1. Sınıf Kelebek</strong> | Renk: <strong>Açık Ekstra Beyaz</strong></div>
+              <p class="prod-desc-line">Acı tat içermeyen, taze ve dolgun kelebek ceviz içi. Otel ve catering ikramları için kusursuz.</p>
+              <div class="prod-packaging-tags">
+                <span class="prod-pkg-tag">10 Kg Koli</span>
+                <span class="prod-pkg-tag">Vakumlu Paket</span>
+              </div>
+            </div>
+
+            <div class="prod-item-card">
+              <div class="prod-top-row">
+                <h4 class="prod-name">Çeyrek &amp; Kırık Sanayi Cevizi</h4>
+                <span class="prod-origin">Endüstriyel Seçme</span>
+              </div>
+              <div class="prod-specs-meta">Form: <strong>Çeyrek &amp; Parça</strong> | Kullanım: <strong>Baklava &amp; Kek Sanayi</strong></div>
+              <p class="prod-desc-line">Unlu mamul, helva ve tatlı fabrikaları için homojen elenmiş ekonomik ceviz içi.</p>
+              <div class="prod-packaging-tags">
+                <span class="prod-pkg-tag">10 Kg Koli</span>
+                <span class="prod-pkg-tag">Paletli</span>
+              </div>
+            </div>
+
+            <div class="prod-item-card">
+              <div class="prod-top-row">
+                <h4 class="prod-name">Datça &amp; Nonpareil Badem İçi</h4>
+                <span class="prod-origin">Yerli Datça / İthal Seçme</span>
+              </div>
+              <div class="prod-specs-meta">Kalibre: <strong>23/25 - 27/30 Boy</strong> | Form: <strong>Kavrulmuş Tuzlu &amp; Çiğ</strong></div>
+              <p class="prod-desc-line">Tatlı badem cinsi, acılık içermeyen, düzgün taneli birinci sınıf fırınlanmış badem içi.</p>
+              <div class="prod-packaging-tags">
+                <span class="prod-pkg-tag">10 Kg Koli</span>
+                <span class="prod-pkg-tag">25 Kg Çuval</span>
+              </div>
+            </div>
+
+            <div class="prod-item-card">
+              <div class="prod-top-row">
+                <h4 class="prod-name">W240 &amp; W320 Fırınlanmış Kaju</h4>
+                <span class="prod-origin">Özel Seçim Kaju</span>
+              </div>
+              <div class="prod-specs-meta">Kalibre: <strong>W240 Jumbo &amp; W320</strong> | Tuz: <strong>Hafif Kaya Tuzlu</strong></div>
+              <p class="prod-desc-line">Özel döner fırınlarda nar gibi kızartılmış, diri ve taze kaju fıstığı.</p>
+              <div class="prod-packaging-tags">
+                <span class="prod-pkg-tag">10 Kg Vakumlu Teneke/Koli</span>
+              </div>
+            </div>
+
+            <div class="prod-item-card">
+              <div class="prod-top-row">
+                <h4 class="prod-name">Malatya Jumbo Günkurusu Kayısı</h4>
+                <span class="prod-origin">Malatya / Doğal Güneş</span>
+              </div>
+              <div class="prod-specs-meta">Boy: <strong>No: 1 Jumbo</strong> | Katkı: <strong>%100 Kükürtsüz Doğal</strong></div>
+              <p class="prod-desc-line">Güneşte doğal kurutulmuş koyu kahve günkurusu kayısı. İhracat ve gurme tedariğe uygun.</p>
+              <div class="prod-packaging-tags">
+                <span class="prod-pkg-tag">5 Kg Koli</span>
+                <span class="prod-pkg-tag">10 Kg Ahşap/Karton Koli</span>
+              </div>
+            </div>
+
+            <div class="prod-item-card">
+              <div class="prod-top-row">
+                <h4 class="prod-name">Aydın Dağ İnciri Naturel Jumbo</h4>
+                <span class="prod-origin">Aydın Germencik</span>
+              </div>
+              <div class="prod-specs-meta">Boy: <strong>No: 1-2 Naturel</strong> | İşlem: <strong>Bal Gibi Yumuşak</strong></div>
+              <p class="prod-desc-line">Aflatoksin testinden geçmiş, kimyasal yıkanmamış, doğal dağ inciri toptan kolileri.</p>
+              <div class="prod-packaging-tags">
+                <span class="prod-pkg-tag">10 Kg Koli</span>
+                <span class="prod-pkg-tag">Paletli</span>
+              </div>
+            </div>
+
+            <div class="prod-item-card">
+              <div class="prod-top-row">
+                <h4 class="prod-name">Kilis Karası &amp; Sultaniye Kuru Üzüm</h4>
+                <span class="prod-origin">Kilis &amp; Manisa</span>
+              </div>
+              <div class="prod-specs-meta">Tür: <strong>Çekirdeksiz &amp; Çekirdekli</strong> | Sınıf: <strong>Doğal Gölgede Kurutma</strong></div>
+              <p class="prod-desc-line">Kan yapıcı iri Kilis karası ile altın sarısı çekirdeksiz Sultaniye kuru üzüm çeşitleri.</p>
+              <div class="prod-packaging-tags">
+                <span class="prod-pkg-tag">10 Kg Koli</span>
+                <span class="prod-pkg-tag">25 Kg Çuval</span>
+              </div>
+            </div>
+
+            <div class="prod-item-card">
+              <div class="prod-top-row">
+                <h4 class="prod-name">Kabak Çekirdeği &amp; Tavşanlı Leblebi</h4>
+                <span class="prod-origin">Nevşehir &amp; Kütahya</span>
+              </div>
+              <div class="prod-specs-meta">Çekirdek: <strong>Ürgüp Sivrisi Kavrulmuş</strong> | Leblebi: <strong>Çifte Kavrulmuş</strong></div>
+              <p class="prod-desc-line">Geleneksel ocaklarda kavrulan sütlü kabak çekirdeği ve çıtır sarı leblebi.</p>
+              <div class="prod-packaging-tags">
+                <span class="prod-pkg-tag">10 Kg Koli</span>
+                <span class="prod-pkg-tag">25 Kg Çuval</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Kalite & Güvence Standartları -->
+      <section class="certificates-section" aria-label="Kalite Belgeleri">
+        <div class="header-inner" style="width: min(1200px, calc(100% - 2.5rem));">
+          <div class="section-head" style="text-align: center; max-width: 750px; margin: 0 auto;">
+            <p class="section-tag">Uluslararası Standart</p>
+            <h2 class="section-main-title">Kalite, Güvenlik &amp; Uygunluk Belgelerimiz</h2>
+          </div>
+          <div class="certs-grid">
+            <div class="cert-card">
+              <div class="cert-icon">📜</div>
+              <div class="cert-title">ISO 22000:2018</div>
+              <p class="cert-desc">Gıda Güvenliği Yönetim Sistemi Sertifikası</p>
+            </div>
+            <div class="cert-card">
+              <div class="cert-icon">🏢</div>
+              <div class="cert-title">ISO 9001:2015</div>
+              <p class="cert-desc">Kalite Yönetim Sistemi ve Taahhüt Güvencesi</p>
+            </div>
+            <div class="cert-card">
+              <div class="cert-icon">🇹🇷</div>
+              <div class="cert-title">TSE Standartları</div>
+              <p class="cert-desc">Türk Standartları Enstitüsü Uygunluk Belgeleri</p>
+            </div>
+            <div class="cert-card">
+              <div class="cert-icon">🔬</div>
+              <div class="cert-title">Parti Analiz Raporu</div>
+              <p class="cert-desc">Akredite Laboratuvar Rutubet, Saflık ve Mikrobiyoloji Testleri</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ============================================================
+           KURUMSAL TEKLİF & İLETİŞİM FORMU (RFQ)
+           ============================================================ -->
+      <section class="rfq-section" id="teklif">
+        <div class="header-inner" style="width: min(1200px, calc(100% - 2.5rem));">
+          <div class="rfq-box">
+            <div class="rfq-sidebar">
+              <div>
+                <span style="color: #fcd34d; font-size: 0.8rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.1em; display: block; margin-bottom: 0.5rem;">
+                  Kurumsal Satış &amp; Taahhüt Masası
+                </span>
+                <h3>Toptan Teklif &amp; Proje İletişimi</h3>
+                <p>
+                  Kamu ihaleleri, yemekhane tedarik sözleşmeleri, şantiye erzak alımları veya inşaat projelerimiz hakkında detaylı bilgi ve resmi fiyat teklifi almak için formu iletiniz.
+                </p>
+              </div>
+
+              <div class="rfq-contact-list">
+                <div class="rfq-contact-item">
+                  <div class="rfq-contact-icon">🏢</div>
+                  <div>
+                    <strong>Genel Merkez &amp; İrtibat</strong>
+                    <span>Mahatma Gandhi Cd. No:68/8 Çankaya / Ankara</span>
+                  </div>
+                </div>
+                <div class="rfq-contact-item">
+                  <div class="rfq-contact-icon">✉️</div>
+                  <div>
+                    <strong>Kurumsal E-Posta</strong>
+                    <span>info@antepliveyselusta.com</span>
+                  </div>
+                </div>
+                <div class="rfq-contact-item">
+                  <div class="rfq-contact-icon">🏭</div>
+                  <div>
+                    <strong>Gaziantep Lojistik Üssü</strong>
+                    <span>4. Organize Sanayi Bölgesi (OSB) Başpınar / Gaziantep</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <form class="rfq-form" id="rfqForm" onsubmit="event.preventDefault(); alert('Talebiniz kurumsal satış birimimize iletilmiştir. Satış yöneticimiz en kısa sürede resmi proforma ile dönüş yapacaktır.');">
+              <h4>Kurumsal Teklif Talep Formu</h4>
+              <p style="font-size: 0.88rem; color: #7c6858; margin: 0 0 1rem;">
+                * Yalnızca toptan (palet, çuval, ton) ve kurumsal taahhüt talepleri kabul edilmektedir.
+              </p>
+
+              <div class="form-grid-2">
+                <div class="form-field">
+                  <label for="kurumAdi">Kurum / Firma Unvanı *</label>
+                  <input type="text" id="kurumAdi" name="kurumAdi" required placeholder="Örn: ABC Catering / XYZ İnşaat A.Ş." />
+                </div>
+                <div class="form-field">
+                  <label for="yetkiliKisi">Yetkili Adı Soyadı *</label>
+                  <input type="text" id="yetkiliKisi" name="yetkiliKisi" required placeholder="Adınız Soyadınız" />
+                </div>
+              </div>
+
+              <div class="form-grid-2">
+                <div class="form-field">
+                  <label for="telefon">Telefon Numarası *</label>
+                  <input type="tel" id="telefon" name="telefon" required placeholder="05XX XXX XX XX" />
+                </div>
+                <div class="form-field">
+                  <label for="eposta">Kurumsal E-Posta *</label>
+                  <input type="email" id="eposta" name="eposta" required placeholder="satin@sirketiniz.com" />
+                </div>
+              </div>
+
+              <div class="form-grid-2">
+                <div class="form-field">
+                  <label for="hizmetTuru">Talep Edilen Alan *</label>
+                  <select id="hizmetTuru" name="hizmetTuru" required>
+                    <option value="bakliyat">Toptan Kuru Bakliyat Tedariği</option>
+                    <option value="kuruyemis">Toptan Kuruyemiş &amp; Fıstık Tedariği</option>
+                    <option value="karma-gida">Karma Yemekhane &amp; Kurum Erzak Tedariği</option>
+                    <option value="insaat-proje">İnşaat Projesi &amp; Taahhüt Talebi</option>
+                    <option value="lojistik-ihale">Kamu İhalesi &amp; Tır Bazı Lojistik</option>
+                  </select>
+                </div>
+                <div class="form-field">
+                  <label for="tahminiTonaj">Tahmini Hacim / Tonaj</label>
+                  <input type="text" id="tahminiTonaj" name="tahminiTonaj" placeholder="Örn: 10 Ton / 1 Tır / Aylık 5 Ton" />
+                </div>
+              </div>
+
+              <div class="form-field">
+                <label for="mesaj">Talep Detayları ve Şartname Notları</label>
+                <textarea id="mesaj" name="mesaj" rows="3" placeholder="İstediğiniz ürün kalibreleri, ambalaj tipi (25kg/50kg) ve teslimat lokasyonunu belirtebilirsiniz..."></textarea>
+              </div>
+
+              <button type="submit" class="form-submit-btn">Resmi Fiyat Teklifi İste →</button>
+            </form>
+          </div>
+        </div>
+      </section>
+
+      <!-- Hakkımızda Bölümü -->
       <section class="about" id="hakkimizda">
         <div class="about-inner">
           <div class="about-copy">
-            <p class="script">Dükkân</p>
-            <h2>Hakkımızda</h2>
+            <p class="script">Köklü Güvence</p>
+            <h2>Antepli Veysel Usta Hakkında</h2>
             <p>
-              Antepli Veysel Usta, kuru bakliyat ve kuruyemiş dükkânıdır.
-              Tezgâhta yemeklik bakliyat ile çiğ ve kavrulmuş kuruyemiş bir
-              arada durur.
+              Antepli Veysel Usta, Gaziantep'in kadim ticaret ve esnaflık ahlakını; modern inşaat mühendisliği ve endüstriyel toptan tedarik gücüyle birleştiren çok yönlü bir kuruluştur.
             </p>
             <p>
-              Her paketin başında dururuz. Ölçü tartıyla belli olur, seçim
-              gözle yapılır. Ne aldığınızı açıkça konuşuruz.
+              İnşaat taahhüt sektöründe yüksek katlı rezidanslar, bulvar ticaret merkezleri ve sanayi depolama tesisleri inşa ederek şehirlerimize kalıcı değer katıyoruz. Gıda sektöründe ise perakende aracıları devreden çıkararak, doğrudan üreticiden kurumlara, askeri birliklere ve sanayi devlerine parti analizli toptan bakliyat ve kuruyemiş sevkiyatı gerçekleştiriyoruz.
             </p>
             <p>
-              Eve götürdüğünüzde içinizin rahat ettiği bir paket istiyoruz.
+              Sözümüzün ve imzamızın arkasında durur, her partiyi ve her projeyi kendi adımızın teminatı sayarız.
             </p>
           </div>
         </div>
       </section>
 
+      <!-- Konum & Ulaşım Bölümü -->
       <section class="section konum" id="konum">
         <div class="section-head">
-          <p class="script">Ziyaret Edin</p>
-          <h2>Konum &amp; Ulaşım</h2>
+          <p class="script">İrtibat &amp; Görüşme</p>
+          <h2>Merkez Konum &amp; Ulaşım</h2>
           <p class="section-lead">
-            Yöresinden gelen taze bakliyat ve kavrulmuş kuruyemişler için Çankaya'daki tezgâhımıza bekleriz.
+            Kurumsal sözleşmeler, ihale görüşmeleri ve toptan anlaşmalar için Çankaya'daki merkez ofisimize bekleriz.
           </p>
         </div>
 
@@ -225,8 +1162,8 @@
                   <span class="address-meta-val">Mahatma Gandhi Cd. No:68/8</span>
                 </div>
                 <div class="address-meta-row">
-                  <span class="address-meta-label">Bölge:</span>
-                  <span class="address-meta-val">Gaziosmanpaşa — Kuleli Civarı</span>
+                  <span class="address-meta-label">Faaliyet:</span>
+                  <span class="address-meta-val">İnşaat &amp; Toptan Kurumsal Tedarik</span>
                 </div>
               </div>
             </div>
@@ -290,17 +1227,20 @@
       </section>
     </main>
 
+    <!-- Kurumsal Alt Bilgi (Footer) -->
     <footer class="site-footer">
       <div class="footer-emblem-wrap" aria-hidden="true">
         <img class="footer-emblem" src="images/logo-emblem.svg" alt="" width="52" height="52" />
       </div>
       <p class="footer-brand">Antepli Veysel Usta</p>
-      <p class="footer-tagline">Kuru Bakliyat ve Kuruyemiş</p>
-      <p class="footer-address">Büyükesat Mah. Mahatma Gandhi Cad. No:68/8 Çankaya / Ankara</p>
+      <p class="footer-tagline">İnşaat Taahhüt — Toptan Kuru Bakliyat ve Kuruyemiş Tedariği</p>
+      <p class="footer-address" style="font-weight: 600; color: #fcd34d;">⚠️ Perakende Satışımız Yoktur. Yalnızca Kurumsal &amp; Toptan Sevkiyat Yapılmaktadır.</p>
+      <p class="footer-address">Merkez: Büyükesat Mah. Mahatma Gandhi Cad. No:68/8 Çankaya / Ankara</p>
+      <p class="footer-address">Lojistik: 4. Organize Sanayi Bölgesi (OSB) Başpınar / Gaziantep</p>
       <p class="footer-email"><a href="mailto:info@antepliveyselusta.com">info@antepliveyselusta.com</a></p>
       <p class="footer-link"><a href="https://antepliveyselusta.com">antepliveyselusta.com</a></p>
     </footer>
 
-    <script src="js/site.js?v=1.2"></script>
+    <script src="js/site.js?v=2.0"></script>
   </body>
 </html>

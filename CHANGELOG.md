@@ -6,6 +6,27 @@ Format, [Keep a Changelog](https://keepachangelog.com/tr/1.0.0/) standardına da
 
 ---
 
+## [0.4.0] - 2026-10-08
+
+### Eklenenler
+- **Büyük İnşaat & Taahhüt Sektörü Vitrini (`index.html`, `css/style.css`):**
+  - Firma bünyesine yüksek katlı rezidans, konut ve ticari plaza projelerini kapsayan İnşaat & Taahhüt bölümü entegre edildi.
+  - Mert Güllüoğlu İnşaat ve KDL Group görsel konseptlerine uygun olarak İbrahimli Prestij Konutları (28.500 m²), Emek Bulvar Plaza (15.200 m²), Kızılhisar Vadi Konakları (19.400 m²) ve Başpınar OSB Lojistik Kompleksi (35.000 m²) proje kartları ve teknik metrikleri yerleştirildi.
+  - Şantiye mimari planı ve güvenlik baretli taahhüt bannerı ile yüksek çözünürlüklü kule & plaza görselleri eklendi (`images/insaat-kule.jpg`, `images/insaat-plaza.jpg`, `images/insaat-rezidans.jpg`, `images/insaat-santiye.jpg`).
+- **Kurumsal & Toptan Odaklı Konumlandırma ("Perakende Satışımız Yoktur"):**
+  - Sayfanın en üstüne ve altbilgisine dikkat çeken kurumsal bilgilendirme şeridi eklendi: *"Firmamız Toptan Satış ve Kurumsal Taahhüt odaklıdır. Perakende satışımız yoktur."*
+  - Kamu Kurumları, Askeri Birlikler, Hastane & Üniversite Yemekhaneleri, Şantiyeler, Oteller ve İmalatçılara özel kurumsal çözüm ortaklığı bölümü eklendi.
+  - 25 Kg lamine çuval, 50 Kg jüt çuval, 1.000 Kg Big-Bag ve paletli tır bazlı sevkiyat standartları ile endüstriyel lojistik deposu görseli (`images/toptan-depo.jpg`) sisteme dahil edildi.
+- **Zenginleştirilmiş & Çeşitlendirilmiş Ürün Kataloğu:**
+  - **Toptan Kuru Bakliyat:** Gaziantep Yerli Futbol Kırmızı Mercimek, Yaprak Mercimek, Yozgat Yeşil Mercimek (8mm), Koçbaşı Toptan Nohut (9mm & 10mm Mega), Karaman Dermason Fasulye (8-9mm), Coğrafi İşaretli İspir Şeker Fasulyesi, Gönen Baldo Pirinç (1. Grup), Trakya Osmancık Pirinç, İthal Basmati Pirinç, Taş Değirmen İri Bulgur, Köftelik Esmer & Sarı Simit Bulguru, Horoz Barbunya, Cin Mısır ve Aşurelik Buğday.
+  - **Toptan Kuruyemiş:** Gaziantep Duble Boz Kavrulmuş Anaçatlak Antep Fıstığı, Erken Hasat Baklavalık Kuşboku Yeşil İç Fıstık, Meverdi Kırmızı İç Fıstık, File & Pirinç Fıstık, Siirt Tipi İri Anaçatlak Fıstık, Giresun Tombul Yağlı İç Fındık (13-15mm), Ekstra Kelebek Beyaz Ceviz İçi, Çeyrek Sanayi Cevizi, Datça & Nonpareil Badem İçi, W240/W320 Fırınlanmış Kaju, Malatya Jumbo Günkurusu Kayısı, Aydın Dağ İnciri Naturel Jumbo, Kilis Karası Kuru Üzüm, Ürgüp Kabak Çekirdeği ve Tavşanlı Leblebi.
+- **Kurumsal Fiyat Teklifi Talep Formu (RFQ):**
+  - Kurumların tonajlı bakliyat, kuruyemiş ve inşaat projeleri için doğrudan resmi proforma talep edebileceği B2B teklif formu yerleştirildi.
+- **Uluslararası Kalite & Akreditasyon Standartları:**
+  - ISO 22000:2018, ISO 9001:2015, TSE Uygunluk ve Parti Analiz Raporları rozetleri eklendi.
+
+---
+
 ## [0.3.0] - 2026-10-07
 
 ### Eklenenler
