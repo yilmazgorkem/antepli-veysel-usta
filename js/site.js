@@ -22,6 +22,29 @@ if (toggle && nav) {
   });
 }
 
+// Logo tıklandığında URL'ye hash eklemeden en üste yumuşak kaydırma
+const brandLink = document.querySelector(".brand");
+if (brandLink) {
+  brandLink.addEventListener("click", (e) => {
+    const currentPath = window.location.pathname.replace(/\/$/, "");
+    const isHome = currentPath === "" || currentPath.endsWith("index.html") || window.location.pathname === "/";
+    if (isHome) {
+      e.preventDefault();
+      window.scrollTo({ top: 0, behavior: "smooth" });
+      if (window.location.hash && history.replaceState) {
+        history.replaceState(null, "", window.location.pathname + window.location.search);
+      }
+    }
+  });
+}
+
+// URL'de kalmış olabilecek eski #ust veya #hero hash'lerini otomatik temizle
+if (window.location.hash === "#ust" || window.location.hash === "#hero") {
+  if (history.replaceState) {
+    history.replaceState(null, "", window.location.pathname + window.location.search);
+  }
+}
+
 const extensions = ["jpg", "jpeg", "png", "webp"];
 
 document.querySelectorAll("[data-photo]").forEach((frame) => {

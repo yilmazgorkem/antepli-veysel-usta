@@ -4,6 +4,28 @@ Bu projedeki tüm önemli değişiklikler bu dosyada belgelenmektedir.
 
 Format, [Keep a Changelog](https://keepachangelog.com/tr/1.0.0/) standardına dayanmakta olup, [SemVer](https://semver.org/lang/tr/) (Anlamsal Sürümleme) kurallarını takip eder.
 
+## [0.4.6] - 2026-10-08
+
+### Tasarım & UI Sadeleştirmesi
+- **Toptan Sevkiyat & Ambalajlama Bölümü Kart Formatından Çıkarıldı (`index.html`, `_taslak_ana-sayfa.html`, `css/style.css`):**
+  - Sayfadaki kart yoğunluğunu azaltmak amacıyla "Toptan Sevkiyat & Ambalajlama Standartlarımız" bölümündeki kutu/kart (`.pack-box`) tasarımları kaldırıldı.
+  - Kart başlıkları olan *"25 Kg Lamine Çuval"*, *"50 Kg Jüt / PP Çuval"*, *"1.000 Kg Big-Bag"* ve *"Paletli Tır Sevkiyatı"* başlıkları kaldırıldı.
+  - Sevkiyat standartları; onay ikonları, kart kutuları ve başlıklar tamamen kaldırılarak ince ayırıcı hatlara sahip sade, zarif ve dengeli bir yatay kurumsal özellik şeridi (`.packaging-specs-flow`) olarak yeniden düzenlendi.
+- **İnşaat Proje Rozetlerindeki Onay İkonları Kaldırıldı (`index.html`, `_taslak_ana-sayfa.html`, `css/style.css`):**
+  - Prestij Konutları, Bulvar Plaza, Vadi Konakları ve Lojistik Kompleksi proje kartlarındaki 16 adet özellik rozetinden (`.project-feature-pill`) onay (tik) SVG ikonları kaldırılarak saf, sade rozet tipografisine geçildi.
+
+---
+
+## [0.4.5] - 2026-10-08
+
+### Düzeltmeler & URL Optimizasyonu
+- **Logo Bağlantısı ve URL Çubuğu Temizlendi (`index.html`, `_taslak_ana-sayfa.html`, `js/site.js`):**
+  - Amatör bir görünüm oluşturan `/#ust` çapa (anchor) bağlantısı kaldırıldı; logo bağlantısı kurumsal standartlara uygun olarak `href="/"` yapıldı.
+  - Logo tıklandığında sayfayı yeniden yüklemeden en tepeye yumuşak kaydırma (`smooth scroll`) sağlandı ve URL'ye hiçbir hash (`#`) eklenmemesi sağlandı.
+  - Ziyaretçilerin tarayıcı geçmişinde veya yer imlerinde kalmış olabilecek eski `/#ust` ve `/#hero` hash'lerini adres çubuğundan otomatik temizleyen History API desteği eklendi.
+
+---
+
 ## [0.4.4] - 2026-10-08
 
 ### Eklendi & Tasarım Güncellemeleri
