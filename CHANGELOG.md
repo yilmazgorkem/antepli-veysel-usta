@@ -4,6 +4,18 @@ Bu projedeki tüm önemli değişiklikler bu dosyada belgelenmektedir.
 
 Format, [Keep a Changelog](https://keepachangelog.com/tr/1.0.0/) standardına dayanmakta olup, [SemVer](https://semver.org/lang/tr/) (Anlamsal Sürümleme) kurallarını takip eder.
 
+## [0.4.7] - 2026-10-08
+
+### Mobil Görünüm Optimizasyonu & Üst Bildirim Şeridi Sadeleştirmesi
+- **Üst Bildirim Şeridindeki Buton Kaldırıldı (`index.html`, `_taslak_ana-sayfa.html`, `css/style.css`):**
+  - "Önemli Bilgilendirme" üst şeridindeki *"Kurumsal İletişim & Bilgi Alın →"* butonu kaldırıldı.
+  - Bildirim şeridi masaüstünde ve mobilde ortalanarak sade, kurumsal ve ferah bir bilgilendirme formatına kavuşturuldu.
+- **Mobil Cihaz Uyumluluğu İyileştirildi (`css/style.css`):**
+  - Mobilde dikeyde fazla yer kaplayan, dağınık satır kırılmalarına yol açan yapı düzenlendi.
+  - Bildirim rozeti ve metin boyutları, satır yükseklikleri mobil ekranlara göre dengelendi; dikey alan tüketimi minimize edildi.
+
+---
+
 ## [0.4.6] - 2026-10-08
 
 ### Tasarım & UI Sadeleştirmesi
