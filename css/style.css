@@ -1647,6 +1647,13 @@ h3 {
   justify-content: center;
   font-size: 1.3rem;
   font-weight: 700;
+  flex-shrink: 0;
+}
+
+.corp-floating-badge-icon svg {
+  width: 24px;
+  height: 24px;
+  color: #1f140e;
 }
 
 .corp-floating-badge-text strong {
@@ -1769,12 +1776,17 @@ h3 {
   height: 52px;
   border-radius: 8px;
   background: rgba(166, 132, 72, 0.12);
-  color: var(--brown);
+  color: var(--primary);
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 1.6rem;
   margin-bottom: 1.2rem;
+}
+
+.sector-card-icon svg {
+  width: 28px;
+  height: 28px;
+  color: var(--primary);
 }
 
 .sector-card h3 {
@@ -1893,7 +1905,14 @@ h3 {
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
   display: inline-flex;
   align-items: center;
-  gap: 0.35rem;
+  gap: 0.4rem;
+}
+
+.project-loc-tag svg {
+  width: 13px;
+  height: 13px;
+  color: var(--primary);
+  flex-shrink: 0;
 }
 
 .project-details {
@@ -1974,6 +1993,16 @@ h3 {
   color: var(--brown);
   padding: 0.22rem 0.55rem;
   border-radius: 4px;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+}
+
+.project-feature-pill svg {
+  width: 11px;
+  height: 11px;
+  color: var(--gold);
+  flex-shrink: 0;
 }
 
 /* Proje Büyük İnşaat Bannerı (KDL ilhamlı) */
@@ -2043,8 +2072,17 @@ h3 {
 }
 
 .institutional-focus-icon {
-  font-size: 3rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
   line-height: 1;
+}
+
+.institutional-focus-icon svg {
+  width: 46px;
+  height: 46px;
+  color: #9a3412;
 }
 
 .institutional-focus-text h3 {
@@ -2103,8 +2141,13 @@ h3 {
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 1.4rem;
   flex-shrink: 0;
+}
+
+.client-item-icon svg {
+  width: 22px;
+  height: 22px;
+  color: var(--primary);
 }
 
 .client-item h4 {
@@ -2175,12 +2218,9 @@ h3 {
 }
 
 .catalog-category-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-end;
   border-bottom: 2px solid var(--gold);
-  padding-bottom: 0.8rem;
-  margin-bottom: 2rem;
+  padding-bottom: 0.75rem;
+  margin-bottom: 1.75rem;
   margin-top: 3.5rem;
 }
 
@@ -2190,21 +2230,15 @@ h3 {
 
 .catalog-cat-title {
   font-family: var(--serif);
-  font-size: 2rem;
+  font-size: clamp(1.4rem, 3.5vw, 1.85rem);
   font-weight: 700;
   color: var(--ink);
   margin: 0;
+  line-height: 1.25;
 }
 
 .catalog-cat-badge {
-  background: var(--brown);
-  color: #ffffff;
-  font-size: 0.78rem;
-  font-weight: 600;
-  padding: 0.3rem 0.8rem;
-  border-radius: 4px;
-  text-transform: uppercase;
-  letter-spacing: 0.05em;
+  display: none;
 }
 
 .products-table-grid {
@@ -2217,78 +2251,51 @@ h3 {
   background: #ffffff;
   border: 1px solid rgba(90, 59, 36, 0.12);
   border-radius: 8px;
-  padding: 1.25rem 1.15rem;
+  padding: 1.25rem 1.25rem;
   display: flex;
   flex-direction: column;
-  transition: border-color 0.2s, box-shadow 0.2s;
+  gap: 0.45rem;
+  transition: border-color 0.2s, box-shadow 0.2s, transform 0.2s;
 }
 
 .prod-item-card:hover {
   border-color: var(--gold);
   box-shadow: 0 6px 18px rgba(44, 28, 18, 0.07);
+  transform: translateY(-2px);
 }
 
 .prod-top-row {
   display: flex;
   justify-content: space-between;
   align-items: baseline;
-  gap: 0.5rem;
-  margin-bottom: 0.35rem;
+  gap: 0.6rem;
+  flex-wrap: wrap;
 }
 
 .prod-name {
   font-family: var(--serif);
-  font-size: 1.18rem;
+  font-size: 1.15rem;
   font-weight: 700;
   color: var(--ink);
   margin: 0;
-  line-height: 1.25;
+  line-height: 1.3;
 }
 
 .prod-origin {
   font-size: 0.74rem;
   background: rgba(166, 132, 72, 0.12);
   color: var(--brown);
-  padding: 0.15rem 0.45rem;
-  border-radius: 3px;
+  padding: 0.2rem 0.5rem;
+  border-radius: 4px;
   font-weight: 600;
   white-space: nowrap;
 }
 
-.prod-specs-meta {
-  font-size: 0.82rem;
-  color: #7c6858;
-  margin-bottom: 0.6rem;
-  line-height: 1.4;
-}
-
-.prod-specs-meta strong {
-  color: var(--terracotta);
-}
-
-.prod-desc-line {
-  font-size: 0.85rem;
-  color: #554234;
+.prod-varieties {
+  font-size: 0.88rem;
+  color: #6b5849;
   line-height: 1.45;
-  margin: 0 0 0.8rem;
-  flex-grow: 1;
-}
-
-.prod-packaging-tags {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 0.35rem;
-  border-top: 1px dashed rgba(90, 59, 36, 0.14);
-  padding-top: 0.6rem;
-}
-
-.prod-pkg-tag {
-  font-size: 0.72rem;
-  background: #f6f0e6;
-  color: #443122;
-  padding: 0.15rem 0.45rem;
-  border-radius: 3px;
-  font-weight: 500;
+  margin: 0;
 }
 
 /* Kalite & Güvence Sertifikaları */
@@ -2314,8 +2321,17 @@ h3 {
 }
 
 .cert-icon {
-  font-size: 2rem;
-  margin-bottom: 0.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 0.6rem;
+  height: 38px;
+}
+
+.cert-icon svg {
+  width: 32px;
+  height: 32px;
+  color: var(--primary);
 }
 
 .cert-title {

@@ -51,8 +51,8 @@ if (copyBtn) {
     const originalText = span ? span.textContent : copyBtn.textContent;
 
     const showSuccess = () => {
-      if (span) span.textContent = "Adres Kopyalandı ✓";
-      else copyBtn.textContent = "Adres Kopyalandı ✓";
+      if (span) span.textContent = "Adres Kopyalandı";
+      else copyBtn.textContent = "Adres Kopyalandı";
       copyBtn.classList.add("copied");
 
       setTimeout(() => {

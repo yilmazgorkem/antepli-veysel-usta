@@ -4,6 +4,20 @@ Bu projedeki tüm önemli değişiklikler bu dosyada belgelenmektedir.
 
 Format, [Keep a Changelog](https://keepachangelog.com/tr/1.0.0/) standardına dayanmakta olup, [SemVer](https://semver.org/lang/tr/) (Anlamsal Sürümleme) kurallarını takip eder.
 
+## [0.4.1] - 2026-10-08
+
+### Kaldırılanlar & Sadeleştirme
+- **Kurumsal Teklif Talep Formu (RFQ) Kaldırıldı (`index.html`, `_taslak_ana-sayfa.html`):**
+  - Sayfadaki form alanı ve ilgili RFQ bölümü tamamen kaldırıldı; menü ve aksiyon yönlendirmeleri kurumsal iletişim ve konum bölümüne (`#konum`) bağlandı.
+- **Tüm Emojiler Kaldırıldı ve Vektörel SVG İkonlara Dönüştürüldü (`index.html`, `_taslak_ana-sayfa.html`, `css/style.css`, `js/site.js`):**
+  - Üst bilgilendirme şeridi, sektör kartları, inşaat projeleri konum/özellik etiketleri, kurumsal alan kartları, kalite sertifikaları ve altbilgi üzerindeki tüm emojiler temizlendi.
+  - Sektör kartları ve kurumsal alanlar için kurumsal kimliğe uygun ince çizgili vektörel SVG ikonlar entegre edildi.
+  - Panoya kopyalama bildirimindeki sembol temizlendi.
+- **Toptan Ürün Kataloğu Sadeleştirildi (`index.html`, `_taslak_ana-sayfa.html`, `css/style.css`):**
+  - Kategori başlıklarındaki koli, çuval ve ambalaj rozetleri kaldırıldı.
+  - Ürün kartlarındaki aşırı teknik özellikler (çatlak oranı, rutubet, kalibre detayları, elek ölçüleri), uzun metinler ve alt ambalaj etiketleri temizlendi.
+  - Bakliyat ve kuruyemiş çeşitleri, gereksiz şişirme olmadan ana ürün gruplarını zengin bir şekilde temsil eden sade, kurumsal ve okunabilir kartlara dönüştürüldü.
+
 ---
 
 ## [0.4.0] - 2026-10-08
