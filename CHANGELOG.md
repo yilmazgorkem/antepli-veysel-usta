@@ -4,6 +4,16 @@ Bu projedeki tüm önemli değişiklikler bu dosyada belgelenmektedir.
 
 Format, [Keep a Changelog](https://keepachangelog.com/tr/1.0.0/) standardına dayanmakta olup, [SemVer](https://semver.org/lang/tr/) (Anlamsal Sürümleme) kurallarını takip eder.
 
+## [0.4.12] - 2026-10-09
+
+### Ürün Kartları Şehir ve Menşei Etiketleri Temizliği
+- **Şehir ve Menşei Rozetleri Kaldırıldı (`index.html`, `_taslak_ana-sayfa.html`):**
+  - Toptan Kuru Bakliyat ve Toptan Kuruyemiş bölümlerindeki 14 ürün kartının tamamından şehir ve menşei etiketleri (`.prod-origin`: *Giresun*, *Gaziantep / Yerli*, *Konya & Aksaray*, *Karaman & İspir*, *Malatya & Aydın* vb.) kaldırıldı.
+  - Kart başlıkları ve açıklamaları doğrudan ürün adı ve çeşit detayına odaklanacak şekilde sadeleştirildi ("Gaziantep Bulgur Çeşitleri" başlığı "Bulgur Çeşitleri" olarak güncellendi).
+  - Bakliyat ve Kuruyemiş bölüm açıklamalarındaki şehir listeleri arındırılarak kurumsal ve sade bir dil sağlandı.
+
+---
+
 ## [0.4.11] - 2026-10-09
 
 ### Kalite Belgeleri Bölümü Sadeleştirme & Kart/İkon Temizliği
