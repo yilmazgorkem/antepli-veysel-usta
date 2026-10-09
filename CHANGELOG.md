@@ -4,6 +4,15 @@ Bu projedeki tüm önemli değişiklikler bu dosyada belgelenmektedir.
 
 Format, [Keep a Changelog](https://keepachangelog.com/tr/1.0.0/) standardına dayanmakta olup, [SemVer](https://semver.org/lang/tr/) (Anlamsal Sürümleme) kurallarını takip eder.
 
+## [0.4.10] - 2026-10-09
+
+### CSS Hizalama & Metrik Kutuları Merkezleme Düzenlemesi
+- **Kurumsal Metrik Kutuları Hizalaması (`css/style.css`):**
+  - `.metric-item` öğelerine `text-align: center;` eklenerek metinlerin ve rakamların sütun içerisinde dikey simetriyle tam ortalanması sağlandı.
+  - Yatay iç boşluk (`padding`) değeri `0.5rem 1rem 0.5rem 0` yerine `0.5rem 1.5rem` olarak dengelendi; sınır çizgileri (border) ve kutu içi dolguların görsel dengesi sağlandı.
+
+---
+
 ## [0.4.9] - 2026-10-08
 
 ### Proje Kartları Sadeleştirmesi & Mimari Fotoğraf Vitrini

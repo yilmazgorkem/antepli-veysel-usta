@@ -1,6 +1,9 @@
-# Antepli Veysel Usta — Kuru Bakliyat ve Kuruyemiş
+# Antepli Veysel Usta — İnşaat, Taahhüt ve Kurumsal Toptan Tedarik
 
-Antepli Veysel Usta kuru bakliyat ve kuruyemiş dükkânı için hazırlanmış, geleneksel esnaf sıcaklığını modern ve zarif bir editoryal tasarım diliyle buluşturan kurumsal web sitesi.
+Antepli Veysel Usta kurumsal kimliği için hazırlanmış; büyük ölçekli inşaat ve taahhüt projeleri ile kamu kurumları, yemekhaneler, oteller ve endüstriyel üretim tesislerine yönelik toptan kuru bakliyat ve kuruyemiş tedariğini sunan prestijli kurumsal web sitesi.
+
+> [!IMPORTANT]
+> **Kurumsal Satış Politikası:** Firma **yalnızca B2B (Kurumsal Toptan Satış ve Taahhüt)** odaklıdır. Bireysel perakende satış yapılmamaktadır.
 
 ---
 
@@ -9,7 +12,7 @@ Antepli Veysel Usta kuru bakliyat ve kuruyemiş dükkânı için hazırlanmış,
 - [Öne Çıkan Özellikler](#-öne-çıkan-özellikler)
 - [Tasarım ve Tipografi Felsefesi](#-tasarım-ve-tipografi-felsefesi)
 - [Dizin ve Dosya Yapısı](#-dizin-ve-dosya-yapısı)
-- [Görsel Sistemi ve Dosya Standartları](#-görsel-sistemi-ve-dosya-standartları)
+- [Görsel ve Medya Sistemi](#-görsel-ve-medya-sistemi)
 - [Yerel Geliştirme (Local Development)](#-yerel-geliştirme-local-development)
 - [Canlıya Alma ve Dağıtım (Deployment)](#-canlıya-alma-ve-dağıtım-deployment)
 - [SEO ve Yapısal Veri (Schema.org)](#-seo-ve-yapısal-veri-schemaorg)
@@ -19,28 +22,32 @@ Antepli Veysel Usta kuru bakliyat ve kuruyemiş dükkânı için hazırlanmış,
 
 ## ✨ Öne Çıkan Özellikler
 
-- **Sıfır Bağımlılık (Zero-Dependency):** Harici kütüphane veya ağır framework'ler içermez; saf HTML5, modern Vanilla CSS ve hafif JavaScript ile ışık hızında yüklenir.
-- **Duyarlı (Responsive) Tasarım:** Masaüstü, tablet ve mobil cihaz ekranlarında kusursuz hiyerarşi ve düzen.
-- **Akıllı Görsel Yükleyici:** `data-photo` özniteliği ile görselleri kademeli olarak dener (`.jpg`, `.jpeg`, `.png`, `.webp`). Henüz görseli bulunmayan alanlar için zarif monogram yedekler (fallback badge) gösterir.
-- **Erişilebilirlik ve Semantik Yapı:** Doğru başlık hiyerarşisi (`h1`-`h3`), klavye erişimi için atlama bağlantısı (`skip-link`), `aria-expanded` ile desteklenen mobil menü.
-- **SEO Uyumlu:** Açıklayıcı meta etiketleri, tema rengi (`theme-color`) ve Schema.org uyumlu yapılandırılmış veri entegrasyonu.
+- **Çift Odaklı Kurumsal Yapı:**
+  - **Büyük İnşaat & Taahhüt Projeleri:** Yüksek katlı iş merkezleri, rezidanslar, plazalar ve ağır lojistik kompleksleri içeren mimari vitrin galerisi.
+  - **Kurumsal Toptan Gıda Tedariği:** Fabrikalar, yemek sanayileri ve kamu kurumları için tonajlı kuru bakliyat ve endüstriyel kuruyemiş sevkiyatı.
+- **Zenginleştirilmiş Ürün Kataloğu:** 14 farklı stüdyo kalitesinde ürün kartı (Kırmızı/Yeşil mercimek, nohut, fasulye, pirinç, Antep fıstığı çeşitleri, fındık, ceviz, kuru meyveler vb.).
+- **Toptan Sevkiyat & Ambalajlama Standartları:** 25 Kg lamine çuval, 50 Kg jüt/PP çuval, 1.000 Kg big-bag ve paletli tır sevkiyatı lojistik göstergeleri.
+- **Sıfır Bağımlılık (Zero-Dependency) & Yüksek Performans:** Ağır JavaScript kütüphanelerine ihtiyaç duyulmaz; saf HTML5, Vanilla CSS ve hafif JavaScript ile milisaniyeler içinde yüklenir.
+- **Yerleşik Node.js Sunucusu:** Railway, Render ve bulut platformları için sıfır bağımlılıklı yerel HTTP sunucusu (`server.js`), sağlık kontrolü (`/health`) ve otomatik mime-type yönetimi.
+- **Tam Duyarlı (Responsive) Tasarım:** Masaüstü, tablet ve mobil cihaz ekranlarında kusursuz hiyerarşi, dengeli tipografi ve akıcı kullanıcı deneyimi.
+- **Erişilebilirlik ve Semantik Standartlar:** Atlama bağlantısı (`skip-link`), semantik HTML5 etiketleri (`<header>`, `<main>`, `<section>`, `<aside>`, `<footer>`) ve mobil menü için ARIA desteği.
 
 ---
 
 ## 🎨 Tasarım ve Tipografi Felsefesi
 
-Sitenin görsel dili, kuru bakliyat çuvallarının, kavrulmuş kuruyemiş tezgâhlarının ve Antep çarşı esnafının samimi dokusundan ilham alır:
+Sitenin görsel dili, Gaziantep esnaf kültürünün köklü güvenini modern mimari disiplin ve editoryal kurumsal zarafetle birleştirir:
 
 - **Renk Paleti:**
-  - **Mürekkep (`--ink`):** Derin kahve tonu (`#2c1c12`)
+  - **Mürekkep (`--ink`):** Derin kahve tonu (`#2c1c12`, `#24160e`)
   - **Terakota (`--terracotta`):** Sıcak toprak/kiremit kırmızısı (`#9a3f28`)
-  - **Krem & Kâğıt (`--cream`, `--paper`):** Göz yormayan doğal fon (`#f6f0e6`, `#fbf7f1`)
-  - **Zeytin (`--olive`):** Doğallığı simgeleyen koyu zeytin yeşili (`#3f4a2e`)
-  - **Altın (`--gold`, `--gold-soft`):** Antik pirinç terazi ve mühür dokunuşları (`#a68448`, `#d7c4a0`)
+  - **Krem & Kâğıt (`--cream`, `--paper`):** Göz yormayan doğal arka plan dokusu (`#f6f0e6`, `#fbf7f1`)
+  - **Zeytin (`--olive`):** Doğallık ve bereketi simgeleyen zeytin yeşili (`#3f4a2e`)
+  - **Altın (`--gold`, `--gold-soft`):** Prestijli pirinç ve mühür dokunuşları (`#a68448`, `#d7c4a0`)
 - **Tipografi:**
-  - *Başlıklar ve Vurgular:* **Cormorant Garamond** (Klasik editoryal zarafet)
-  - *Gövde Metinleri:* **Outfit** (Yüksek okunabilirlik sunan modern sans-serif)
-  - *Samimi Notlar:* **Caveat** (El yazısı dokusu)
+  - *Başlıklar ve Vurgular:* **Cormorant Garamond** (Klasik editoryal zarafet ve güven)
+  - *Gövde Metinleri:* **Outfit** (Yüksek okunabilirlik sunan çağdaş sans-serif)
+  - *Kurumsal İmzalar:* **Caveat** (Zanaatkâr dokunuşu)
 
 ---
 
@@ -48,87 +55,104 @@ Sitenin görsel dili, kuru bakliyat çuvallarının, kavrulmuş kuruyemiş tezg�
 
 ```plaintext
 antepli veysel usta/
-├── index.html          # Sayfa iskeleti, semantik bölümler ve yapısal veri
-├── favicon.svg         # Vektörel monogram (VU) dükkân ikonu
-├── README.md           # Proje tanıtımı ve geliştirici kılavuzu
-├── CHANGELOG.md        # Sürüm ve değişiklik geçmişi
+├── index.html                 # Canlı ana sayfa (İnşaat, taahhüt ve toptan tedarik vitrini)
+├── _taslak_ana-sayfa.html     # Ana sayfa yedek/geliştirme şablonu
+├── yapim-asamasinda.html     # Bakım/yapım aşamasında bilgilendirme sayfası
+├── server.js                  # Bağımsız Node.js statik web ve sağlık kontrol sunucusu
+├── Procfile                   # Bulut dağıtım (Railway/Heroku) proses tanımlayıcısı
+├── package.json               # Node.js motor gereksinimleri ve başlangıç komutları
+├── favicon.svg                # Vektörel monogram (VU) amblemi
+├── README.md                  # Proje tanıtımı ve geliştirici kılavuzu
+├── CHANGELOG.md               # Sürüm ve değişiklik günlüğü
 ├── css/
-│   └── style.css       # Tasarım sistemi, CSS değişkenleri, responsive ızgara
+│   └── style.css              # Tasarım sistemi, responsive kurallar, mimari ve ürün ızgaraları
 ├── js/
-│   └── site.js         # Mobil menü kontrolü ve akıllı görsel yükleme motoru
-└── images/             # Dükkân ve ürün fotoğrafları
-    ├── vitrin.jpg      # Tezgâh/vitrin ana dikey görseli (Hero alanı)
-    ├── bakliyat.jpg    # Kuru bakliyat kartı fotoğrafı
-    ├── kuruyemis.jpg   # Kuruyemiş kartı fotoğrafı
-    └── dukkan.jpg      # (Opsiyonel / Hakkımızda bölümü dükkân fotoğrafı)
+│   └── site.js                # Mobil navigasyon kontrolü, History API ve pürüzsüz kaydırma motoru
+└── images/                    # Yüksek çözünürlüklü medya arşivi
+    ├── logo-emblem.svg        # Vektörel kurumsal logo amblemi
+    ├── insaat-kule.jpg        # Prestij Konut & Kule projesi fotoğrafı
+    ├── insaat-plaza.jpg       # İş Merkezi & Plaza projesi fotoğrafı
+    ├── insaat-rezidans.jpg    # Vadi Konakları & Rezidans projesi fotoğrafı
+    ├── insaat-santiye.jpg     # Ağır Şantiye & Taahhüt projesi fotoğrafı
+    ├── toptan-depo.jpg        # Toptan gıda lojistik deposu görseli
+    ├── vitrin.jpg             # Kurumsal kahraman alanı vitrin fotoğrafı
+    ├── bakliyat.jpg           # Toptan kuru bakliyat genel görseli
+    ├── kuruyemis.jpg          # Toptan kuruyemiş genel görseli
+    └── [ürün fotoğrafları]     # 14 adet stüdyo ürün fotoğrafı (.jpg)
 ```
 
 ---
 
-## 🖼 Görsel Sistemi ve Dosya Standartları
+## 🖼 Görsel ve Medya Sistemi
 
-Sitedeki fotoğraf çerçeveleri (`.shot`), `js/site.js` içerisindeki dinamik yükleyici ile çalışır:
+Sitedeki tüm görseller yüksek çözünürlükte optimize edilmiştir:
 
-1. **İsimlendirme ve Eşleşme:**
-   - Hero tezgâh fotoğrafı: `images/vitrin.jpg` (`data-photo="images/vitrin"`)
-   - Bakliyat kartı: `images/bakliyat.jpg` (`data-photo="images/bakliyat"`)
-   - Kuruyemiş kartı: `images/kuruyemis.jpg` (`data-photo="images/kuruyemis"`)
-   - Dükkân içi fotoğrafı: `images/dukkan.jpg` (`data-photo="images/dukkan"`)
+1. **İnşaat & Taahhüt Portföyü:**
+   - `images/insaat-kule.jpg`: Kule ve prestij konut projeleri
+   - `images/insaat-plaza.jpg`: Finans merkezi ve plaza projeleri (`object-position: center top` hizalamalı)
+   - `images/insaat-rezidans.jpg`: Karma yaşam ve vadi rezidansları
+   - `images/insaat-santiye.jpg`: Ağır şantiye, lojistik ve fabrika taahhütleri
 
-2. **Otomatik Uzantı Çözümleme:**
-   Görsel yükleyici sırasıyla `.jpg` ➔ `.jpeg` ➔ `.png` ➔ `.webp` uzantılarını test eder. Görsel bulunduğunda çerçeveye `has-photo` sınıfı eklenir ve fotoğraf yumuşak bir biçimde tezgâha yerleşir.
+2. **Toptan Ürün Kataloğu (14 Çeşit):**
+   - **Bakliyat:** `kirmizi-mercimek.jpg`, `yesil-sari-mercimek.jpg`, `kocbasi-nohut.jpg`, `kuru-fasulye.jpg`, `baldo-pirinc.jpg`, `gaziantep-bulgur.jpg`, `barbunya-misir-bugday.jpg`
+   - **Kuruyemiş:** `kavrulmus-antep-fistigi.jpg`, `boz-ic-fistik.jpg`, `cig-kiyilmis-fistik.jpg`, `ic-findik.jpg`, `ceviz-badem-ici.jpg`, `kayisi-kuru-incir.jpg`, `kuru-uzum-cekirdek.jpg`
 
-3. **Yedek Kart (Placeholder Fallback):**
-   Eğer görsel henüz yüklenmemişse (örneğin henüz çekilmemiş bir `dukkan.jpg` için), kullanıcıya kırık görsel ikonu yerine şık bir monogram (`VU`, `B`, `K`, `AV`) ve dosya ipucu içeren özel çerçeve gösterilir.
-
-> [!TIP]
-> **Web Standartları Uyarısı:** Görselleri `images/` klasörüne eklerken dosya adlarında boşluk veya Türkçe karakter (ör. `ş`, `ı`, `ğ`) kullanmamak, tüm statik web sunucularında (Linux/CDN/Pages) bağlantı kopmalarını önler. Örn: `kuruyemis.jpg` ve `bakliyat.jpg`.
+3. **Lojistik ve Tesis Görselleri:**
+   - `images/toptan-depo.jpg`: Endüstriyel gıda saklama ve paketleme tesisi
+   - `images/vitrin.jpg`: Kurumsal giriş vitrini
 
 ---
 
 ## 🚀 Yerel Geliştirme (Local Development)
 
-Projeyi bilgisayarınızda çalıştırmak için herhangi bir derleme aracına (build tool) ihtiyaç yoktur.
+Proje herhangi bir derleme aracına (Webpack, Vite vb.) ihtiyaç duymadan çalışır.
 
-### Yöntem 1: Python ile Basit Sunucu (Önerilen)
-Terminali proje kök dizininde açın ve çalıştırın:
+### Yöntem 1: Yerleşik Node.js Sunucusu (Önerilen)
+Node.js ortamında doğrudan yerleşik sunucuyu çalıştırabilirsiniz:
+```bash
+npm start
+# veya: node server.js
+```
+Tarayıcınızda açın: `http://localhost:8080`
+
+### Yöntem 2: Python ile Hızlı Sunucu
 ```bash
 python3 -m http.server 8000
 ```
 Tarayıcınızda açın: `http://localhost:8000`
 
-### Yöntem 2: Node.js / npx serve
-```bash
-npx serve .
-```
-
 ### Yöntem 3: Doğrudan Tarayıcıda Açma
-Doğrudan `index.html` dosyasını favori tarayıcınızla açabilirsiniz (Görsel asenkron isteklerinin sorunsuz çalışması için yerel bir HTTP sunucusu üzerinden açılması tavsiye edilir).
+Doğrudan `index.html` dosyasına çift tıklayarak favori tarayıcınızda görüntüleyebilirsiniz.
 
 ---
 
 ## 🌐 Canlıya Alma ve Dağıtım (Deployment)
 
-Proje tamamen statik olduğu için dilediğiniz platformda ücretsiz ve tek tıkla yayınlanabilir:
+Proje hem modern PaaS/IaaS platformlarında hem de geleneksel statik barındırma alanlarında sorunsuz çalışır:
 
-- **GitHub Pages:** Depoyu GitHub'a yükleyip *Settings > Pages* altından ana dalı (`main`) seçerek anında yayına alabilirsiniz.
-- **Cloudflare Pages / Vercel / Netlify:** Proje klasörünü sürükleyip bırakarak veya git deposunu bağlayarak sıfır konfigürasyon ile yayına alabilirsiniz.
-- **Geleneksel Hosting (cPanel / Nginx / Apache):** Klasördeki tüm dosyaları sunucunuzun `public_html` dizinine yüklemeniz yeterlidir.
+- **Railway / Render:**
+  - Depo bağlandığında `Procfile` veya `npm start` komutu otomatik algılanır.
+  - `/health` ve `/healthz` uç noktaları sayesinde sağlık kontrolleri anında doğrulanır.
+- **Cloudflare Pages / Vercel / Netlify / GitHub Pages:**
+  - Proje kök dizini doğrudan yayınlanabilir; ek ayar gerektirmez.
+- **Geleneksel Hosting (cPanel / Apache / Nginx):**
+  - Dosyaların tamamını sunucunuzun `public_html` dizinine yüklemeniz yeterlidir.
 
 ---
 
 ## 🔍 SEO ve Yapısal Veri (Schema.org)
 
-`index.html` içerisinde arama motorlarının (Google, Yandex vb.) dükkânı yerel işletme olarak doğru tanıması ve yerel aramalarda (Local SEO) öne çıkması için Schema.org `Store` formatında JSON-LD yapısal verisi bulunmaktadır:
+`index.html` içerisinde arama motorlarının (Google, Yandex vb.) firmayı ana yüklenici ve toptan tedarikçi olarak dizine eklemesi için Schema.org `GeneralContractor` standardında JSON-LD yapısal verisi bulunmaktadır:
 
 ```html
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
-  "@type": "Store",
-  "name": "Antepli Veysel Usta",
+  "@type": "GeneralContractor",
+  "name": "Antepli Veysel Usta — İnşaat, Taahhüt ve Toptan Tedarik",
   "url": "https://antepliveyselusta.com",
-  "description": "Kuru bakliyat ve kuruyemiş dükkânı.",
+  "description": "Büyük ölçekli konut ve ticari inşaat taahhüt projeleri ile kurumsal toptan kuru bakliyat ve kuruyemiş tedariği.",
+  "email": "info@antepliveyselusta.com",
   "address": {
     "@type": "PostalAddress",
     "streetAddress": "Mahatma Gandhi Caddesi No:68/8",
@@ -150,11 +174,14 @@ Proje tamamen statik olduğu için dilediğiniz platformda ücretsiz ve tek tık
 
 ## 🗺 Yol Haritası (Roadmap)
 
-- [x] Temel sayfa düzeni, renk paleti ve tipografik kimlik
-- [x] Dinamik görsel yükleyici ve tezgâh kartları
-- [x] Tezgâh, bakliyat ve kuruyemiş orijinal fotoğraflarının entegrasyonu
-- [x] Konum bölümüne tam açık adres, yol tarifi ve harita entegrasyonu (Büyükesat Mah. Mahatma Gandhi Cad. No:68/8, Çankaya/Ankara)
-- [x] Tek tıkla adres kopyalama ve doğrudan harita navigasyon bağlantıları
-- [ ] Dükkân içi (`images/dukkan.jpg`) fotoğrafının temini ve yerleştirilmesi
-- [ ] Hızlı sipariş ve iletişim için doğrudan WhatsApp yönlendirme butonu
-- [ ] Güncel bakliyat & kuruyemiş ürün ve fiyat listesi modülü
+- [x] Temel sayfa düzeni, renk paleti ve tipografik kurumsal kimlik
+- [x] Büyük İnşaat & Taahhüt Projeleri vitrini (Kule, Plaza, Rezidans, Şantiye)
+- [x] Kurumsal Toptan Gıda ve Sevkiyat Standartları (Çuval, Big-Bag, Paletli Tır akışı)
+- [x] Toptan Kuru Bakliyat ve Kuruyemiş derin ürün katalogları (14 stüdyo fotoğrafı)
+- [x] Kalite, hijyen ve gıda güvenliği standartları (ISO 9001, ISO 22000, Helal Sertifikası)
+- [x] Temiz URL yapısı, logo bağlantısının `/#ust` çapasından arındırılması ve History API entegrasyonu
+- [x] Üst bildirim şeridi ve mobil ekran optimizasyonları
+- [x] Proje kartlarının minimalist mimari fotoğraf galerisine dönüştürülmesi
+- [x] Kurumsal metrik kutuları CSS hizalama ve merkezleme iyileştirmeleri
+- [ ] Kurumsal toptan teklif talep formu (Online RFQ modülü)
+- [ ] İndirilebilir PDF ürün kataloğu ve teknik şartname dökümanları
