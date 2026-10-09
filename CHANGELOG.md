@@ -4,6 +4,32 @@ Bu projedeki tüm önemli değişiklikler bu dosyada belgelenmektedir.
 
 Format, [Keep a Changelog](https://keepachangelog.com/tr/1.0.0/) standardına dayanmakta olup, [SemVer](https://semver.org/lang/tr/) (Anlamsal Sürümleme) kurallarını takip eder.
 
+## [0.4.9] - 2026-10-08
+
+### Proje Kartları Sadeleştirmesi & Mimari Fotoğraf Vitrini
+- **Proje ve Şehir İsimleri, Detay Blokları Kaldırıldı (`index.html`, `_taslak_ana-sayfa.html`):**
+  - "Büyük İnşaat & Taahhüt Projelerimiz" bölümündeki 4 karttan tüm proje isimleri, lokasyon/şehir etiketleri (*Çankaya / Ankara*, *Ataşehir / İstanbul*, *Nilüfer / Bursa*, *Gebze / Kocaeli*), durum rozetleri, alt başlıklar, açıklama metinleri, metrekare/ünite teknik veri kutuları ve etiket rozetleri kaldırıldı.
+  - Bölüm başlığının açıklamasından şehir isimleri temizlenerek doğrudan görsel vitrine odaklanıldı.
+  - Proje bölümü sade, zarif ve çağdaş bir mimari fotoğraf galerisi yapısına dönüştürüldü.
+- **Plaza Fotoğrafı Üst Görünürlük Odaklaması (`css/style.css`, `index.html`, `_taslak_ana-sayfa.html`):**
+  - Gökdelen plaza görseli (`insaat-plaza.jpg`) için `object-position: center top` hizalaması tanımlandı. Kulenin üst katları ve mimari tavan hatları kadraj içine alınarak tepe kırpılması önlendi.
+  - Kart yükseklikleri masaüstünde 340px, mobilde 260px olarak dengelendi.
+- **Önbellek Sürüm Güncellemesi (`css/style.css?v=2.1`):**
+  - Stil dosyası sürüm parametresi `v=2.1` olarak güncellendi.
+
+---
+
+## [0.4.8] - 2026-10-08
+
+### Kurumsal Metrik Şeridi Sadeleştirmesi
+- **"40+ Yıl / Köklü Esnaf & Taahhüt Tecrübesi" Kartı Kaldırıldı (`index.html`, `_taslak_ana-sayfa.html`):**
+  - Kurumsal ana sayfa kahraman bölümünün altındaki metrik şeridinde yer alan *"40+ Yıl — Köklü Esnaf & Taahhüt Tecrübesi — Gaziantep menşeli güvenilir sermaye"* göstergesi kaldırıldı.
+- **Metrik Izgara Yerleşimi 3 Sütuna Optimize Edildi (`css/style.css`):**
+  - Kalan 3 metrik (*150.000+ m² İnşaat Alanı*, *15.000+ Ton Yıllık Toptan Sevkiyat*, *350+ Kurum Çözüm Ortağı*) için ızgara düzeni masaüstünde 3 eşit sütun (`repeat(3, 1fr)`) ve genişletilmiş boşluk (`gap: 2rem`) olarak dengelendi.
+  - Mobil ve dar ekranlarda (≤ 768px) tek sütunlu ve ince altın hatlı bölücülere sahip dikey akış korunarak kusursuz bir simetri sağlandı.
+
+---
+
 ## [0.4.7] - 2026-10-08
 
 ### Mobil Görünüm Optimizasyonu & Üst Bildirim Şeridi Sadeleştirmesi

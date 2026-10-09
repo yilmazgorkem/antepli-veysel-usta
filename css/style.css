@@ -1761,8 +1761,8 @@ h3 {
   max-width: 1200px;
   margin: 0 auto;
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 1.5rem;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
 }
 
 .metric-item {
@@ -1829,7 +1829,7 @@ h3 {
 
 .sector-quad-grid {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(3, 1fr);
   gap: 1.5rem;
   margin-top: 2rem;
 }
@@ -1902,9 +1902,10 @@ h3 {
 
 .project-media {
   position: relative;
-  height: 290px;
+  height: 340px;
   overflow: hidden;
   background: #24160e;
+  border-radius: 12px;
 }
 
 .project-media img {
@@ -1912,6 +1913,10 @@ h3 {
   height: 100%;
   object-fit: cover;
   transition: transform 0.6s ease;
+}
+
+.project-media img.img-focus-top {
+  object-position: center top;
 }
 
 .project-card:hover .project-media img {
@@ -2564,20 +2569,16 @@ h3 {
   .corp-hero-img-box img {
     height: 350px;
   }
-  .metrics-grid {
-    grid-template-columns: repeat(2, 1fr);
-    gap: 1.8rem;
-  }
-  .metric-item {
-    border-right: none;
-    border-bottom: 1px solid rgba(166, 132, 72, 0.2);
-    padding-bottom: 1rem;
-  }
+
   .sector-quad-grid {
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
   }
   .projects-grid {
     grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+  .project-media {
+    height: 260px;
   }
   .construction-banner-box {
     grid-template-columns: 1fr;
@@ -2630,6 +2631,22 @@ h3 {
   .notice-highlight {
     display: inline-block;
   }
+  .metrics-grid {
+    grid-template-columns: 1fr;
+    gap: 1.4rem;
+  }
+  .metric-item {
+    border-right: none;
+    border-bottom: 1px solid rgba(166, 132, 72, 0.2);
+    padding: 0 0 1.2rem 0;
+  }
+  .metric-item:last-child {
+    border-bottom: none;
+    padding-bottom: 0;
+  }
+  .sector-quad-grid {
+    grid-template-columns: 1fr;
+  }
 }
 
 @media (max-width: 640px) {
@@ -2642,9 +2659,7 @@ h3 {
   .corp-tagline-kdl::before {
     width: 1.5rem;
   }
-  .metrics-grid {
-    grid-template-columns: 1fr;
-  }
+
   .sector-quad-grid {
     grid-template-columns: 1fr;
   }
