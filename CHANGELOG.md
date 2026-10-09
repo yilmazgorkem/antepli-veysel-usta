@@ -4,6 +4,16 @@ Bu projedeki tüm önemli değişiklikler bu dosyada belgelenmektedir.
 
 Format, [Keep a Changelog](https://keepachangelog.com/tr/1.0.0/) standardına dayanmakta olup, [SemVer](https://semver.org/lang/tr/) (Anlamsal Sürümleme) kurallarını takip eder.
 
+## [0.4.11] - 2026-10-09
+
+### Kalite Belgeleri Bölümü Sadeleştirme & Kart/İkon Temizliği
+- **İkonlar ve Kart Sistemi Kaldırıldı (`index.html`, `_taslak_ana-sayfa.html`, `css/style.css`):**
+  - "Kalite, Güvenlik & Uygunluk Belgelerimiz" bölümündeki 4 sertifika öğesinin üzerindeki tüm SVG ikonlar (`cert-icon`) kaldırıldı.
+  - Kart kutusu görünümü (`border`, `border-radius`, `background: #faf7f2`) kaldırılarak, yerine şık, kurumsal ve ferah bir yatay tipografik sütun yapısı (`.cert-item`) getirildi.
+  - Masaüstünde sütunlar arasına zarif dikey ayırıcı çizgiler uygulanarak mimari bir hizalama sağlandı; tablet ve mobil cihazlar için esnek responsive düzenlemeler tamamlandı.
+
+---
+
 ## [0.4.10] - 2026-10-09
 
 ### CSS Hizalama & Metrik Kutuları Merkezleme Düzenlemesi

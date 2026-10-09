@@ -2372,42 +2372,36 @@ h3 {
 .certs-grid {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  gap: 1.25rem;
-  margin-top: 2rem;
+  gap: 1.5rem;
+  margin-top: 2.25rem;
 }
 
+.cert-item,
 .cert-card {
-  border: 1px solid rgba(166, 132, 72, 0.3);
-  border-radius: 8px;
-  padding: 1.5rem 1rem;
   text-align: center;
-  background: #faf7f2;
+  padding: 0.5rem 1.25rem;
+  background: transparent;
+  border: none;
+  border-right: 1px solid rgba(166, 132, 72, 0.2);
 }
 
-.cert-icon {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin-bottom: 0.6rem;
-  height: 38px;
-}
-
-.cert-icon svg {
-  width: 32px;
-  height: 32px;
-  color: var(--primary);
+.cert-item:last-child,
+.cert-card:last-child {
+  border-right: none;
 }
 
 .cert-title {
+  font-family: var(--serif);
   font-weight: 700;
-  font-size: 1rem;
+  font-size: 1.15rem;
   color: var(--ink);
-  margin-bottom: 0.25rem;
+  margin-bottom: 0.35rem;
 }
 
 .cert-desc {
-  font-size: 0.8rem;
+  font-size: 0.85rem;
   color: #6a5342;
+  line-height: 1.45;
   margin: 0;
 }
 
@@ -2600,6 +2594,17 @@ h3 {
   }
   .certs-grid {
     grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+  }
+  .cert-item,
+  .cert-card {
+    border-right: none;
+    border-bottom: 1px solid rgba(166, 132, 72, 0.15);
+    padding: 0 0 1rem 0;
+  }
+  .cert-item:nth-last-child(-n+2),
+  .cert-card:nth-last-child(-n+2) {
+    border-bottom: none;
   }
   .rfq-box {
     grid-template-columns: 1fr;
@@ -2693,6 +2698,17 @@ h3 {
   }
   .certs-grid {
     grid-template-columns: 1fr;
+    gap: 1.25rem;
+  }
+  .cert-item,
+  .cert-card {
+    border-right: none;
+    border-bottom: 1px solid rgba(166, 132, 72, 0.15);
+    padding: 0 0 1rem 0;
+  }
+  .cert-item:last-child,
+  .cert-card:last-child {
+    border-bottom: none;
   }
   .corp-hero-title {
     font-size: 2.1rem;
